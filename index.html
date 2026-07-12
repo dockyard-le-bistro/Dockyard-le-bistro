@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dockyard Le Bistro</title>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🍴 Dockyard Le Bistro
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#offers">Offers</a>
+<a href="#payment">Pay</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Dockyard Le Bistro</h1>
+
+<p>
+Good Food • Good Mood
+</p>
+
+<a class="btn"
+href="#menu">
+
+View Menu
+
+</a>
+
+<a class="btn"
+href="https://wa.me/917626845853?text=Hi%20Dockyard%20Le%20Bistro,%20I%20want%20to%20place%20an%20order.">
+
+Order on WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>About Us</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;line-height:1.8;">
+
+Welcome to Dockyard Le Bistro.
+
+We serve delicious Pizza, Burgers, Momos,
+Chinese, Pasta, Fries, Shakes,
+Kulchas, Parathas and much more.
+
+Fresh Taste.
+Affordable Prices.
+Quick Service.
+
+</p>
+
+</section>
+
+<section id="menu">
+
+<h2>Our Menu</h2>
+
+<center>
+
+<input
+
+id="search"
+
+type="text"
+
+placeholder="Search Menu..."
+
+onkeyup="searchMenu()"
+
+style="
+
+width:300px;
+
+padding:12px;
+
+border-radius:30px;
+
+border:none;
+
+margin-bottom:30px;
+
+font-size:16px;">
+
+</center>
+
+<div class="menu-grid">
+
+<div class="card">
+
+<h3>🍕 Pizza</h3>
+
+<ul>
+
+<li><span>Margherita</span><span>₹199</span></li>
+
+<li><span>Farm Fresh</span><span>₹249</span></li>
+
+<li><span>Paneer Pizza</span><span>₹279</span></li>
+
+<li><span>Cheese Burst</span><span>₹329</span></li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>🍔 Burgers</h3>
+
+<ul>
+
+<li><span>Veg Burger</span><span>₹79</span></li>
+
+<li><span>Cheese Burger</span><span>₹99</span></li>
+
+<li><span>Aloo Tikki Burger</span><span>₹69</span></li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>🥟 Momos</h3>
+
+<ul>
+
+<li><span>Veg Momos</span><span>₹99</span></li>
+
+<li><span>Fried Momos</span><span>₹119</span></li>
+
+<li><span>Tandoori Momos</span><span>₹159</span></li>
+
+</ul>
+
+</div>
+<div class="card">
+
+<h3>🍝 Pasta</h3>
+
+<ul>
+
+<li><span>White Sauce Pasta</span><span>₹169</span></li>
+
+<li><span>Red Sauce Pasta</span><span>₹159</span></li>
+
+<li><span>Mix Sauce Pasta</span><span>₹179</span></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- OFFERS -->
+
+<section id="offers">
+
+<h2>🔥 Today's Offers</h2>
+
+<div class="offer">
+Buy 6 Veg Burgers & Get 1 FREE 🍔
+</div>
+
+<div class="offer">
+Buy Any 3 Pizza & Get Fried Momos FREE 🍕🥟
+</div>
+
+<div class="offer">
+Buy 3 Pasta & Get Spring Roll FREE 🍝
+</div>
+
+<div class="offer">
+Buy 6 Same Flavour Shakes & Get ₹10 OFF Each 🥤
+</div>
+
+</section>
+
+<!-- PAYMENT -->
+
+<section id="payment">
+
+<h2>💳 Scan & Pay</h2>
+
+<div class="payment">
+
+<img src="qr.jpg" alt="PhonePe QR">
+
+<h3>UPI Accepted</h3>
+
+<p>PhonePe • Google Pay • Paytm • BHIM</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>📞 Contact Us</h2>
+
+<div class="contact">
+
+<h3>Dockyard Le Bistro</h3>
+
+<p>Good Food • Good Mood</p>
+
+<br>
+
+<p>
+<a href="tel:9646225661">📞 9646225661</a>
+</p>
+
+<br>
+
+<p>
+<a href="tel:7626845853">📞 7626845853</a>
+</p>
+
+<br>
+
+<a class="btn"
+href="https://wa.me/917626845853?text=Hi%20Dockyard%20Le%20Bistro,%20I%20want%20to%20place%20an%20order."
+target="_blank">
+
+Order on WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© <span id="year"></span> Dockyard Le Bistro
+</p>
+
+<p>
+Made with ❤️ for Food Lovers
+</p>
+
+</footer>
+
+<a
+class="whatsapp"
+href="https://wa.me/917626845853?text=Hi%20Dockyard%20Le%20Bistro,%20I%20want%20to%20place%20an%20order."
+target="_blank">
+
+💬 Order Now
+
+</a>
+
+</body>
+
+</html>
