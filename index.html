@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dockyard Le Bistro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- HERO -->
+
+<header class="hero">
+
+<img src="logo.JPG" class="logo">
+
+<h1 class="title">
+Dockyard Le Bistro
+</h1>
+
+<p class="tagline">
+🌱 Pure Vegetarian Restaurant 🌱
+</p>
+
+</header>
+
+
+
+<!-- SEARCH -->
+
+<div class="search-area">
+
+<input
+type="text"
+id="searchMenu"
+placeholder="🔍 Search your favourite food..."
+onkeyup="searchFood()">
+
+</div>
+
+
+
+<!-- CATEGORY GRID -->
+
+<section class="category-grid">
+
+
+<div class="category-card"
+onclick="showCategory('kulcha')">
+
+<img src="images/kulcha.jpg">
+
+<h3>🫓 Kulcha</h3>
+
+</div>
+
+
+
+<div class="category-card"
+onclick="showCategory('pizza')">
+
+<img src="images/pizza.jpg">
+
+<h3>🍕 Pizza</h3>
+
+</div>
+
+
+
+<div class="category-card"
+onclick="showCategory('burger')">
+
+<img src="images/burger.jpg">
+
+<h3>🍔 Burger</h3>
+
+</div>
+
+
+
+<div class="category-card"
+onclick="showCategory('pasta')">
+
+<img src="images/pasta.jpg">
+
+<h3>🍝 Pasta</h3>
+
+</div>
+
+
+
+<div class="category-card"
+onclick="showCategory('momos')">
+
+<img src="images/momos.jpg">
+
+<h3>🥟 Momos</h3>
+
+</div>
+
+
+
+<div class="category-card"
+onclick="showCategory('fries')">
+
+<img src="images/fries.jpg">
+
+<h3>🍟 Fries</h3>
+
+</div>
+
+
+
+<div class="category-card"
+onclick="showCategory('shakes')">
+
+<img src="images/shake.jpg">
+
+<h3>🥤 Shakes</h3>
+
+</div>
+
+
+
+<div class="category-card"
+onclick="showCategory('rolls')">
+
+<img src="images/roll.jpg">
+
+<h3>🌯 Rolls</h3>
+
+</div>
+
+
+
+<div class="category-card"
+onclick="showCategory('chinese')">
+
+<img src="images/chinese.jpg">
+
+<h3>🍜 Chinese</h3>
+
+</div>
+
+
+
+<div class="category-card"
+onclick="showCategory('maincourse')">
+
+<img src="images/maincourse.jpg">
+
+<h3>🍲 Main Course</h3>
+
+</div>
+
+
+
+<div class="category-card"
+onclick="showCategory('mealbox')">
+
+<img src="images/mealbox.jpg">
+
+<h3>🍱 Meal Box</h3>
+
+</div>
+
+
+
+<div class="category-card"
+onclick="showCategory('streetfood')">
+
+<img src="images/streetfood.jpg">
+
+<h3>🌮 Street Food</h3>
+
+</div>
+
+</section>
+
+
+
+<!-- MENU START -->
+
+<main class="
+  <!-- ================= KULCHA ================= -->
+
+<section id="kulcha" class="category-page">
+
+<h2>🫓 Amritsari Kulcha</h2>
+
+<div class="food-grid">
+
+<div class="food-card">
+<img src="images/aloo-kulcha.jpg" class="food-img">
+<h3>Aloo Kulcha</h3>
+<p>₹70</p>
+<button onclick="addItem('Aloo Kulcha',70)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/onion-kulcha.jpg" class="food-img">
+<h3>Payaz Kulcha</h3>
+<p>₹80</p>
+<button onclick="addItem('Payaz Kulcha',80)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/paneer-kulcha.jpg" class="food-img">
+<h3>Paneer Kulcha</h3>
+<p>₹100</p>
+<button onclick="addItem('Paneer Kulcha',100)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/pizza-kulcha.jpg" class="food-img">
+<h3>Pizza Kulcha</h3>
+<p>₹120</p>
+<button onclick="addItem('Pizza Kulcha',120)">+ Add</button>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= PIZZA ================= -->
+
+<section id="pizza" class="category-page">
+
+<h2>🍕 Pizza</h2>
+
+<div class="food-grid">
+
+<div class="food-card">
+<img src="images/margherita.jpg" class="food-img">
+<h3>Margherita Pizza</h3>
+<p>₹120</p>
+<button onclick="addItem('Margherita Pizza',120)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/corn-pizza.jpg" class="food-img">
+<h3>Corn Pizza</h3>
+<p>₹130</p>
+<button onclick="addItem('Corn Pizza',130)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/tandoori-pizza.jpg" class="food-img">
+<h3>Tandoori Makhni Pizza</h3>
+<p>₹140</p>
+<button onclick="addItem('Tandoori Makhni Pizza',140)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/supreme-pizza.jpg" class="food-img">
+<h3>Veg Supreme Pizza</h3>
+<p>₹160</p>
+<button onclick="addItem('Veg Supreme Pizza',160)">+ Add</button>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= BURGER ================= -->
+
+<section id="burger" class="category-page">
+
+<h2>🍔 Burgers</h2>
+
+<div class="food-grid">
+
+<div class="food-card">
+<img src="images/veg-burger.jpg" class="food-img">
+<h3>Veg Burger</h3>
+<p>₹70</p>
+<button onclick="addItem('Veg Burger',70)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/paneer-burger.jpg" class="food-img">
+<h3>Paneer Burger</h3>
+<p>₹100</p>
+<button onclick="addItem('Paneer Burger',100)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/noodles-burger.jpg" class="food-img">
+<h3>Noodles Burger</h3>
+<p>₹50</p>
+<button onclick="addItem('Noodles Burger',50)">+ Add</button>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= PASTA ================= -->
+
+<section id="pasta" class="category-page">
+
+<h2>🍝 Pasta</h2>
+
+<div class="food-grid">
+
+<div class="food-card">
+<img src="images/red-pasta.jpg" class="food-img">
+<h3>Red Sauce Pasta</h3>
+<p>₹120</p>
+<button onclick="addItem('Red Sauce Pasta',120)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/white-pasta.jpg" class="food-img">
+<h3>White Sauce Pasta</h3>
+<p>₹120</p>
+<button onclick="addItem('White Sauce Pasta',120)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/mixed-pasta.jpg" class="food-img">
+<h3>Mixed Sauce Pasta</h3>
+<p>₹120</p>
+<button onclick="addItem('Mixed Sauce Pasta',120)">+ Add</button>
+</div>
+
+</div>
+
+</section>
+<!-- ================= MOMOS ================= -->
+
+<section id="momos" class="category-page">
+
+<h2>🥟 Momos</h2>
+
+<div class="food-grid">
+
+<div class="food-card">
+<img src="images/steam-momos.jpg" class="food-img">
+<h3>Steam Momos</h3>
+<p>₹60</p>
+<button onclick="addItem('Steam Momos',60)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/fried-momos.jpg" class="food-img">
+<h3>Fried Momos</h3>
+<p>₹70</p>
+<button onclick="addItem('Fried Momos',70)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/tandoori-momos.jpg" class="food-img">
+<h3>Tandoori Momos Gravy</h3>
+<p>₹100</p>
+<button onclick="addItem('Tandoori Momos Gravy',100)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/afghani-momos.jpg" class="food-img">
+<h3>Afghani Momos</h3>
+<p>₹120</p>
+<button onclick="addItem('Afghani Momos',120)">+ Add</button>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FRIES ================= -->
+
+<section id="fries" class="category-page">
+
+<h2>🍟 Fries</h2>
+
+<div class="food-grid">
+
+<div class="food-card">
+<img src="images/classic-fries.jpg" class="food-img">
+<h3>Classic Fries</h3>
+<p>₹90</p>
+<button onclick="addItem('Classic Fries',90)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/peri-fries.jpg" class="food-img">
+<h3>Peri Peri Fries</h3>
+<p>₹100</p>
+<button onclick="addItem('Peri Peri Fries',100)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/cheese-fries.jpg" class="food-img">
+<h3>Cheese Fries</h3>
+<p>₹140</p>
+<button onclick="addItem('Cheese Fries',140)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/loaded-fries.jpg" class="food-img">
+<h3>Fully Loaded Fries</h3>
+<p>₹200</p>
+<button onclick="addItem('Fully Loaded Fries',200)">+ Add</button>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= SHAKES ================= -->
+
+<section id="shakes" class="category-page">
+
+<h2>🥤 Shakes</h2>
+
+<div class="food-grid">
+
+<div class="food-card">
+<img src="images/banana-shake.jpg" class="food-img">
+<h3>Banana Shake</h3>
+<p>₹70</p>
+<button onclick="addItem('Banana Shake',70)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/mango-shake.jpg" class="food-img">
+<h3>Mango Shake</h3>
+<p>₹80</p>
+<button onclick="addItem('Mango Shake',80)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/cold-coffee.jpg" class="food-img">
+<h3>Cold Coffee</h3>
+<p>₹90</p>
+<button onclick="addItem('Cold Coffee',90)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/chocolate-shake.jpg" class="food-img">
+<h3>Chocolate Shake</h3>
+<p>₹100</p>
+<button onclick="addItem('Chocolate Shake',100)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/strawberry-shake.jpg" class="food-img">
+<h3>Strawberry Shake</h3>
+<p>₹90</p>
+<button onclick="addItem('Strawberry Shake',90)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/vanilla-shake.jpg" class="food-img">
+<h3>Vanilla Shake</h3>
+<p>₹90</p>
+<button onclick="addItem('Vanilla Shake',90)">+ Add</button>
+</div>
+
+</div>
+
+</section>
+<!-- ================= WRAPS & BURGERS ================= -->
+
+<section id="wraps" class="category-page">
+
+<h2>🌯 Wraps & Burgers</h2>
+
+<div class="food-grid">
+
+<div class="food-card">
+<img src="images/veg-wrap.jpg" class="food-img">
+<h3>Veg Wrap</h3>
+<p>₹80</p>
+<button onclick="addItem('Veg Wrap',80)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/paneer-wrap.jpg" class="food-img">
+<h3>Paneer Wrap</h3>
+<p>₹100</p>
+<button onclick="addItem('Paneer Wrap',100)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/wheat-wrap.jpg" class="food-img">
+<h3>Wheat Paneer Wrap</h3>
+<p>₹110</p>
+<button onclick="addItem('Wheat Paneer Wrap',110)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/veg-sandwich.jpg" class="food-img">
+<h3>Veg Sandwich</h3>
+<p>₹90</p>
+<button onclick="addItem('Veg Sandwich',90)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/paneer-sandwich.jpg" class="food-img">
+<h3>Paneer Sandwich</h3>
+<p>₹110</p>
+<button onclick="addItem('Paneer Sandwich',110)">+ Add</button>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= DESI CHINESE ================= -->
+
+<section id="chinese" class="category-page">
+
+<h2>🍜 Desi Chinese</h2>
+
+<div class="food-grid">
+
+<div class="food-card">
+<img src="images/noodles.jpg" class="food-img">
+<h3>Veg Noodles</h3>
+<p>₹100</p>
+<button onclick="addItem('Veg Noodles',100)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/paneer-noodles.jpg" class="food-img">
+<h3>Paneer Noodles</h3>
+<p>₹120</p>
+<button onclick="addItem('Paneer Noodles',120)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/fried-rice.jpg" class="food-img">
+<h3>Veg Fried Rice</h3>
+<p>₹100</p>
+<button onclick="addItem('Veg Fried Rice',100)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/paneer-chilli.jpg" class="food-img">
+<h3>Paneer Chilly</h3>
+<p>₹160</p>
+<button onclick="addItem('Paneer Chilly',160)">+ Add</button>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= MAIN COURSE ================= -->
+
+<section id="maincourse" class="category-page">
+
+<h2>🍲 Main Course</h2>
+
+<div class="food-grid">
+
+<div class="food-card">
+<img src="images/shahi-paneer.jpg" class="food-img">
+<h3>Shahi Paneer</h3>
+<p>₹180</p>
+<button onclick="addItem('Shahi Paneer',180)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/kadhai-paneer.jpg" class="food-img">
+<h3>Kadhai Paneer</h3>
+<p>₹180</p>
+<button onclick="addItem('Kadhai Paneer',180)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/paneer-tikka-masala.jpg" class="food-img">
+<h3>Paneer Tikka Butter Masala</h3>
+<p>₹200</p>
+<button onclick="addItem('Paneer Tikka Butter Masala',200)">+ Add</button>
+</div>
+
+<div class="food-card">
+<img src="images/roti.jpg" class="food-img">
+<h3>Butter Roti</h3>
+<p>₹15</p>
+<button onclick="addItem('Butter Roti',15)">+ Add</button>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= HAPPY OFFER ================= -->
+
+<section class="offer-box">
+
+<h2>🎉 Happy Offers</h2>
+
+<div class="offer-card">
+🎁 Buy 6 Veg Burgers → Get 1 FREE Veg Burger
+</div>
+
+<div class="offer-card">
+🎁 Buy Any 3 Pasta → Get Spring Roll FREE
+</div>
+
+<div class="offer-card">
+🎁 Buy Any 3 Pizza → Get Fried Momos FREE
+</div>
+
+<div class="offer-card">
+🥤 Buy 6 Same Shakes → ₹10 OFF on Each Shake
+</div>
+
+<div class="offer-card">
+🚚 FREE Hostel Delivery
+</div>
+
+</section>
+<!-- ================= YOUR ORDER ================= -->
+
+<section class="order-box">
+
+<h2>🛒 Your Order</h2>
+
+<input
+type="text"
+id="customerName"
+placeholder="👤 Your Name">
+
+<input
+type="tel"
+id="customerPhone"
+placeholder="📱 Mobile Number">
+
+<div id="cartItems">
+
+Your selected items will appear here.
+
+</div>
+
+<h3>
+
+Total ₹ <span id="total">0</span>
+
+</h3>
+
+
+
+<!-- PAYMENT -->
+
+<div class="payment-box">
+
+<h2>💳 Pay Online</h2>
+
+<a href="#" class="pay-button">
+
+💰 Pay Now
+
+</a>
+
+<br><br>
+
+<img
+src="images/phonepe-qr.png"
+class="upi-qr"
+alt="PhonePe QR">
+
+<p>
+
+Scan QR using PhonePe / GPay / Paytm
+
+</p>
+
+<p>
+
+UPI ID
+
+<br>
+
+<b>Q051599316@ybl</b>
+
+</p>
+
+</div>
+
+
+
+<!-- ORDER STATUS -->
+
+<div class="status-box">
+
+<h3>
+
+🟢 Order Status
+
+</h3>
+
+<p id="orderStatus">
+
+Waiting for Order...
+
+</p>
+
+</div>
+
+
+
+<button class="place-order">
+
+✅ Place Order on WhatsApp
+
+</button>
+
+</section>
+
+
+
+<!-- CALL SECTION -->
+
+<section class="call-box">
+
+<h2>
+
+📞 Call to Order
+
+</h2>
+
+<div class="call-buttons">
+
+<a href="tel:7626845853">
+
+<button>
+
+📞 7626845853
+
+</button>
+
+</a>
+
+
+
+<a href="tel:9646225661">
+
+<button>
+
+📞 9646225661
+
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+
+href="https://wa.me/917626845853"
+
+target="_blank"
+
+class="whatsapp-float">
+
+💬
+
+</a>
+
+
+
+<footer>
+
+<h2>
+
+✨ Thank You for Visiting Dockyard Le Bistro ✨
+
+</h2>
+
+<p>
+
+Fresh • Hygienic • Delicious
+
+</p>
+
+<p>
+
+Made with ❤️ in Punjab
+
+</p>
+
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
