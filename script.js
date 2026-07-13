@@ -484,3 +484,69 @@ Order:
 
 
 });
+// AUTO FOOD IMAGES
+
+function addFoodImages(){
+
+document.querySelectorAll(".food-card").forEach(card=>{
+
+
+let title = card.querySelector("h3");
+
+if(!title) return;
+
+
+let name = title.innerText.toLowerCase();
+
+
+let image="food.jpg";
+
+
+if(name.includes("pizza"))
+image="pizza.jpg";
+
+
+else if(name.includes("burger"))
+image="burger.jpg";
+
+
+else if(name.includes("pasta"))
+image="pasta.jpg";
+
+
+else if(name.includes("momos"))
+image="momos.jpg";
+
+
+else if(name.includes("kulcha"))
+image="kulcha.jpg";
+
+
+else if(name.includes("shake") || name.includes("coffee"))
+image="shake.jpg";
+
+
+else if(name.includes("fries"))
+image="fries.jpg";
+
+
+let img=document.createElement("img");
+
+img.src="images/"+image;
+
+img.className="food-img";
+
+
+card.insertBefore(img,title);
+
+
+});
+
+}
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+addFoodImages();
+
+});
