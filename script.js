@@ -3,40 +3,39 @@ let cart = [];
 
 // ADD ITEM
 
-function addItem(name, price){
+function addItem(name, price) {
 
     let existing = cart.find(item => item.name === name);
 
-    if(existing){
+    if (existing) {
 
         existing.qty++;
 
     } else {
 
         cart.push({
-            name:name,
-            price:price,
-            qty:1
+            name: name,
+            price: price,
+            qty: 1
         });
 
     }
 
     updateCart();
-
 }
 
 
 
 // CHANGE QUANTITY
 
-function changeQty(index, change){
+function changeQty(index, amount) {
 
-    cart[index].qty += change;
+    cart[index].qty += amount;
 
 
-    if(cart[index].qty <= 0){
+    if (cart[index].qty <= 0) {
 
-        cart.splice(index,1);
+        cart.splice(index, 1);
 
     }
 
@@ -49,26 +48,23 @@ function changeQty(index, change){
 
 // UPDATE CART
 
-function updateCart(){
+function updateCart() {
 
     let cartBox = document.getElementById("cartItems");
-
     let totalBox = document.getElementById("total");
 
 
     let total = 0;
 
 
-    if(cart.length === 0){
+    if (cart.length === 0) {
 
         cartBox.innerHTML = "Your selected items will appear here";
-
         totalBox.innerHTML = 0;
 
         return;
 
     }
-
 
 
     let html = "";
@@ -86,34 +82,29 @@ function updateCart(){
 
         <div class="cart-row">
 
-
-            <div>
-
-            <b>${item.name}</b><br>
-
-            ₹${item.price} × ${item.qty}
-
-            </div>
+        <div>
+        ${item.name}<br>
+        ₹${item.price} × ${item.qty}
+        </div>
 
 
-            <div>
+        <div>
 
-            <button onclick="changeQty(${index},-1)">
-            −
-            </button>
-
-
-            <span>
-            ${item.qty}
-            </span>
+        <button onclick="changeQty(${index},-1)">
+        -
+        </button>
 
 
-            <button onclick="changeQty(${index},1)">
-            +
-            </button>
+        <b style="margin:0 8px">
+        ${item.qty}
+        </b>
 
 
-            </div>
+        <button onclick="changeQty(${index},1)">
+        +
+        </button>
+
+        </div>
 
 
         </div>
@@ -127,7 +118,6 @@ function updateCart(){
 
     cartBox.innerHTML = html;
 
-
     totalBox.innerHTML = total;
 
 
@@ -136,11 +126,11 @@ function updateCart(){
 
 
 
-// PLACE ORDER
+// PLACE ORDER ON WHATSAPP
+
 
 document.querySelector(".place-order")
 .addEventListener("click",function(){
-
 
 
 let name =
@@ -172,11 +162,11 @@ return;
 
 
 
-let message = 
+let message =
 "🍽️ DOCKYARD LE BISTRO\n\n";
 
 
-message += 
+message +=
 "🌱 PURE VEGETARIAN RESTAURANT\n\n";
 
 
@@ -201,7 +191,7 @@ cart.forEach(item=>{
 
 let amount=item.price*item.qty;
 
-total+=amount;
+total += amount;
 
 
 message +=
@@ -213,26 +203,20 @@ message +=
 });
 
 
-
 message +=
-"\nTOTAL AMOUNT: ₹"+total;
-
+"\nTOTAL: ₹"+total;
 
 
 message +=
-"\n\nThank you for ordering ❤️";
+"\n\n✨ Deliciousness is just a click away ✨";
 
 
 
-// Main WhatsApp number
-
-let whatsapp =
-"917626845853";
-
+let whatsappNumber="917626845853";
 
 
 let url =
-"https://wa.me/"+whatsapp+
+"https://wa.me/"+whatsappNumber+
 "?text="+encodeURIComponent(message);
 
 
