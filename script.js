@@ -18,7 +18,7 @@ function addItem(name, price) {
 
     checkOffers();
     updateCart();
-}
+}updateMenuButtons();
 
 
 // REMOVE ITEM
@@ -35,6 +35,7 @@ function removeItem(name) {
 
     checkOffers();
     updateCart();
+    updateMenuButtons();
 }
 
 
@@ -270,6 +271,42 @@ Total: ₹${document.getElementById("total").innerHTML}
     "_blank"
 
     );
+function updateMenuButtons(){
 
+    let buttons = document.querySelectorAll(".food-card button");
+
+    buttons.forEach(button=>{
+
+        let clickCode = button.getAttribute("onclick");
+
+        if(!clickCode) return;
+
+
+        let match = clickCode.match(/addItem\('(.+?)',(\d+)\)/);
+
+        if(!match) return;
+
+
+        let name = match[1];
+        let price = match[2];
+
+
+        if(cart[name]){
+
+            button.innerHTML = `
+            <span onclick="event.stopPropagation(); removeItem('${name}')">−</span>
+            <b>${cart[name].qty}</b>
+            <span onclick="event.stopPropagation(); addItem('${name}',${price})">+</span>
+            `;
+
+        } else {
+
+            button.innerHTML = "+ Add";
+
+        }
+
+    });
+
+}
 
 });
