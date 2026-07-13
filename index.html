@@ -1418,10 +1418,12 @@
 <p>🎁 Buy Any 3 Pizza and get Fried Momos FREE</p>
 <p>🎁 Buy 6 same flavour shake and get ₹10 discount each shake</p>
 <p>🚚 Hostel delivery free</p>
-
+<div id="offersMessage"></div>
 </div>
 
-
+<p class="delivery-note">
+🚚 Delivery Note: Minimum order should be ₹200/- for delivery beyond 500 meters.
+</p>
 </section>
 
 <div class="customer-details">
@@ -1450,7 +1452,31 @@ ORDER ON WHATSAPP
 
 </div>
 <butto
+<div class="customer-details">
 
+<h2>📲 Order Details</h2>
+
+<input 
+type="text" 
+id="customerName" 
+placeholder="Enter Your Name">
+
+
+<input 
+type="tel" 
+id="customerPhone" 
+placeholder="Enter Phone Number">
+
+
+<button 
+onclick="sendWhatsApp()" 
+class="whatsapp-btn">
+
+ORDER ON WHATSAPP
+
+</button>
+
+</div>
 
 <footer>
 <p>© Dockyard Le Bistro</p>
