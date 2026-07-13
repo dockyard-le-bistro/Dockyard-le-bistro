@@ -550,3 +550,26 @@ document.addEventListener("DOMContentLoaded",()=>{
 addFoodImages();
 
 });
+// SEARCH MENU
+
+function searchFood(){
+
+    let value = document.getElementById("searchMenu").value.toLowerCase();
+
+    document.querySelectorAll(".food-card").forEach(card=>{
+
+        let text = card.innerText.toLowerCase();
+
+        if(text.includes(value)){
+
+            card.style.display = "";
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
