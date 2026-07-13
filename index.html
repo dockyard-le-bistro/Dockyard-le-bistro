@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dockyard Le Bistro</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<img src="logo.png" class="logo" alt="Dockyard Le Bistro">
+
+<h1>Dockyard Le Bistro</h1>
+
+<p>Digital Menu • Scan & Order</p>
+
+</header>
+
+
+
+<div class="search-box">
+
+<input 
+type="text"
+id="search"
+placeholder="🔍 Search food item">
+
+</div>
+
+
+
+<section class="category-grid">
+
+<button onclick="showCategory('kulcha')">
+🟢 Amritsari Kulcha
+</button>
+
+<button onclick="showCategory('parantha')">
+🫓 Prantha
+</button>
+
+<button onclick="showCategory('fries')">
+🍟 Fries
+</button>
+
+<button onclick="showCategory('shake')">
+🥤 Shakes
+</button>
+
+<button onclick="showCategory('pizza')">
+🍕 Pizza
+</button>
+
+<button onclick="showCategory('pasta')">
+🍝 Pasta
+</button>
+
+<button onclick="showCategory('momos')">
+🥟 Momos
+</button>
+
+<button onclick="showCategory('roll')">
+🌯 Kathi Roll
+</button>
+
+<button onclick="showCategory('burger')">
+🍔 Wrap Burger Sandwich
+</button>
+
+<button onclick="showCategory('crispy')">
+🍿 Crispy Nation
+</button>
+
+<button onclick="showCategory('tikka')">
+🍢 Tikka
+</button>
+
+<button onclick="showCategory('chinese')">
+🇨🇳 Desi Chinese
+</button>
+
+<button onclick="showCategory('main')">
+🍲 Main Course
+</button>
+
+<button onclick="showCategory('meal')">
+🍱 Meal Box
+</button>
+
+<button onclick="showCategory('street')">
+🍝 Street Food
+</button>
+
+</section>
+
+
+
+<section id="menu">
+
+
+
+<!-- AMRITSARI KULCHA -->
+
+
+<div class="category-section" id="kulcha">
+
+
+<h2>🟢 AMRITSARI KULCHA</h2>
+
+
+
+<div class="item">
+
+<img src="images/aloo-kulcha.jpg">
+
+<div>
+
+<h3>Aloo Kulcha</h3>
+
+<p>₹70/-</p>
+
+<button onclick="decreaseQty('Aloo Kulcha')">−</button>
+
+<span id="Aloo Kulcha">0</span>
+
+<button onclick="increaseQty('Aloo Kulcha',70)">+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="item">
+
+<img src="images/payaz-kulcha.jpg">
+
+<div>
+
+<h3>Payaz Kulcha</h3>
+
+<p>₹80/-</p>
+
+<button onclick="decreaseQty('Payaz Kulcha')">−</button>
+
+<span id="Payaz Kulcha">0</span>
+
+<button onclick="increaseQty('Payaz Kulcha',80)">+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="item">
+
+<img src="images/gobhi-kulcha.jpg">
+
+<div>
+
+<h3>Gobhi Kulcha (Seasonal)</h3>
+
+<p>₹90/-</p>
+
+<button onclick="decreaseQty('Gobhi Kulcha')">−</button>
+
+<span id="Gobhi Kulcha">0</span>
+
+<button onclick="increaseQty('Gobhi Kulcha',90)">+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="item">
+
+<img src="images/paneer-kulcha.jpg">
+
+<div>
+
+<h3>Paneer Kulcha</h3>
+
+<p>₹100/-</p>
+
+<button onclick="decreaseQty('Paneer Kulcha')">−</button>
+
+<span id="Paneer Kulcha">0</span>
+
+<button onclick="increaseQty('Paneer Kulcha',100)">+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="item">
+
+<img src="images/mixed-kulcha.jpg">
+
+<div>
+
+<h3>Mixed Kulcha</h3>
+
+<p>₹90/-</p>
+
+<button onclick="decreaseQty('Mixed Kulcha')">−</button>
+
+<span id="Mixed Kulcha">0</span>
+
+<button onclick="increaseQty('Mixed Kulcha',90)">+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="item">
+
+<img src="images/pizza-kulcha.jpg">
+
+<div>
+
+<h3>Pizza Kulcha</h3>
+
+<p>₹120/-</p>
+
+<button onclick="decreaseQty('Pizza Kulcha')">−</button>
+
+<span id="Pizza Kulcha">0</span>
+
+<button onclick="increaseQty('Pizza Kulcha',120)">+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<!-- PRANTHA -->
+
+
+<div class="category-section" id="parantha">
+
+
+<h2>🟢 PRANTHA + BUTTER + CURD</h2>
+
+
+
+<div class="item">
+
+<img src="images/aloo-parantha.jpg">
+
+<div>
+
+<h3>Aloo Prantha</h3>
+
+<p>₹50/-</p>
+
+<button onclick="decreaseQty('Aloo Prantha')">−</button>
+
+<span id="Aloo Prantha">0</span>
+
+<button onclick="increaseQty('Aloo Prantha',50)">+</button>
+
+</div>
+
+</div>
+
+
+
+<div class="item">
+
+<img src="images/payaz-parantha.jpg">
+
+<div>
+
+<h3>Payaz Prantha</h3>
+
+<p>₹60/-</p>
+
+<button onclick="decreaseQty('Payaz Prantha')">−</button>
+
+<span id="Payaz Prantha">0</span>
+
+<button onclick="increaseQty('Payaz Prantha',60)">+</button>
+
+</div>
+
+</div>
+
+
+
+<div class="item">
+
+<img src="images/gobhi-parantha.jpg">
+
+<div>
+
+<h3>Gobhi Prantha (Seasonal)</h3>
+
+<p>₹80/-</p>
+
+<button onclick="decreaseQty('Gobhi Prantha')">−</button>
+
+<span id="Gobhi Prantha">0</span>
+
+<button onclick="increaseQty('Gobhi Prantha',80)">+</button>
+
+</div>
+
+</div>
+
+
+
+<div class="item">
+
+<img src="images/paneer-parantha.jpg">
+
+<div>
+
+<h3>Paneer Prantha</h3>
+
+<p>₹90/-</p>
+
+<button onclick="decreaseQty('Paneer Prantha')">−</button>
+
+<span id="Paneer Prantha">0</span>
+
+<button onclick="increaseQty('Paneer Prantha',90)">+</button>
+
+</div>
+
+</div>
+
+
+
+<div class="item">
+
+<img src="images/mixed-parantha.jpg">
+
+<div>
+
+<h3>Mixed Prantha</h3>
+
+<p>₹80/-</p>
+
+<button onclick="decreaseQty('Mixed Prantha')">−</button>
+
+<span id="Mixed Prantha">0</span>
+
+<button onclick="increaseQty('Mixed Prantha',80)">+</button>
+
+</div>
+
+</div>
+
+
+</div>
+<!-- FRIES -->
+
+<div class="category-section" id="fries">
+
+<h2>🍟 FRIES</h2>
+
+
+<div class="item">
+<img src="images/classic-fries.jpg">
+<div>
+<h3>Classic Fries</h3>
+<p>₹90/-</p>
+<button onclick="decreaseQty('Classic Fries')">−</button>
+<span id="Classic Fries">0</span>
+<button onclick="increaseQty('Classic Fries',90)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/peri-peri-fries.jpg">
+<div>
+<h3>Peri Peri Fries</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Peri Peri Fries')">−</button>
+<span id="Peri Peri Fries">0</span>
+<button onclick="increaseQty('Peri Peri Fries',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/tandoori-fries.jpg">
+<div>
+<h3>Tandoori Fries</h3>
+<p>₹120/-</p>
+<button onclick="decreaseQty('Tandoori Fries')">−</button>
+<span id="Tandoori Fries">0</span>
+<button onclick="increaseQty('Tandoori Fries',120)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/cheese-fries.jpg">
+<div>
+<h3>Cheese Fries</h3>
+<p>₹140/-</p>
+<button onclick="decreaseQty('Cheese Fries')">−</button>
+<span id="Cheese Fries">0</span>
+<button onclick="increaseQty('Cheese Fries',140)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/salsa-nachos-fries.jpg">
+<div>
+<h3>Salsa Nachos Fries</h3>
+<p>₹160/-</p>
+<button onclick="decreaseQty('Salsa Nachos Fries')">−</button>
+<span id="Salsa Nachos Fries">0</span>
+<button onclick="increaseQty('Salsa Nachos Fries',160)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/pizza-fries.jpg">
+<div>
+<h3>Pizza Fries</h3>
+<p>₹160/-</p>
+<button onclick="decreaseQty('Pizza Fries')">−</button>
+<span id="Pizza Fries">0</span>
+<button onclick="increaseQty('Pizza Fries',160)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/loaded-fries.jpg">
+<div>
+<h3>Fully Loaded Fries</h3>
+<p>₹180/-</p>
+<button onclick="decreaseQty('Fully Loaded Fries')">−</button>
+<span id="Fully Loaded Fries">0</span>
+<button onclick="increaseQty('Fully Loaded Fries',180)">+</button>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<!-- SHAKES -->
+
+<div class="category-section" id="shake">
+
+<h2>🥤 SHAKES</h2>
+
+
+<div class="item">
+<img src="images/banana-shake.jpg">
+<div>
+<h3>Banana Shake</h3>
+<p>₹70/-</p>
+<button onclick="decreaseQty('Banana Shake')">−</button>
+<span id="Banana Shake">0</span>
+<button onclick="increaseQty('Banana Shake',70)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/mango-shake.jpg">
+<div>
+<h3>Mango Shake</h3>
+<p>₹80/-</p>
+<button onclick="decreaseQty('Mango Shake')">−</button>
+<span id="Mango Shake">0</span>
+<button onclick="increaseQty('Mango Shake',80)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/cold-coffee.jpg">
+<div>
+<h3>Cold Coffee</h3>
+<p>₹90/-</p>
+<button onclick="decreaseQty('Cold Coffee')">−</button>
+<span id="Cold Coffee">0</span>
+<button onclick="increaseQty('Cold Coffee',90)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/chocolate-cold-coffee.jpg">
+<div>
+<h3>Chocolate Cold Coffee</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Chocolate Cold Coffee')">−</button>
+<span id="Chocolate Cold Coffee">0</span>
+<button onclick="increaseQty('Chocolate Cold Coffee',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/strawberry-shake.jpg">
+<div>
+<h3>Strawberry Shake</h3>
+<p>₹90/-</p>
+<button onclick="decreaseQty('Strawberry Shake')">−</button>
+<span id="Strawberry Shake">0</span>
+<button onclick="increaseQty('Strawberry Shake',90)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/butterscotch-shake.jpg">
+<div>
+<h3>Butter Scotch Shake</h3>
+<p>₹90/-</p>
+<button onclick="decreaseQty('Butter Scotch Shake')">−</button>
+<span id="Butter Scotch Shake">0</span>
+<button onclick="increaseQty('Butter Scotch Shake',90)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/vanilla-shake.jpg">
+<div>
+<h3>Vanilla Shake</h3>
+<p>₹90/-</p>
+<button onclick="decreaseQty('Vanilla Shake')">−</button>
+<span id="Vanilla Shake">0</span>
+<button onclick="increaseQty('Vanilla Shake',90)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/chocolate-shake.jpg">
+<div>
+<h3>Chocolate Shake</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Chocolate Shake')">−</button>
+<span id="Chocolate Shake">0</span>
+<button onclick="increaseQty('Chocolate Shake',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/blueberry-shake.jpg">
+<div>
+<h3>Blueberry Shake</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Blueberry Shake')">−</button>
+<span id="Blueberry Shake">0</span>
+<button onclick="increaseQty('Blueberry Shake',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/oreo-shake.jpg">
+<div>
+<h3>Oreo Shake</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Oreo Shake')">−</button>
+<span id="Oreo Shake">0</span>
+<button onclick="increaseQty('Oreo Shake',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/brownie-shake.jpg">
+<div>
+<h3>Brownie Shake</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Brownie Shake')">−</button>
+<span id="Brownie Shake">0</span>
+<button onclick="increaseQty('Brownie Shake',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/hazelnut-coffee.jpg">
+<div>
+<h3>Hazelnut Coffee</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Hazelnut Coffee')">−</button>
+<span id="Hazelnut Coffee">0</span>
+<button onclick="increaseQty('Hazelnut Coffee',100)">+</button>
+</div>
+</div>
+
+</div>
+<!-- PIZZA -->
+
+<div class="category-section" id="pizza">
+
+<h2>🍕 PIZZA</h2>
+
+
+<div class="item">
+<img src="images/margherita-pizza.jpg">
+<div>
+<h3>Margherita Pizza</h3>
+<p>₹120/-</p>
+<button onclick="decreaseQty('Margherita Pizza')">−</button>
+<span id="Margherita Pizza">0</span>
+<button onclick="increaseQty('Margherita Pizza',120)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/onion-capsicum-pizza.jpg">
+<div>
+<h3>Onion Capsicum Pizza</h3>
+<p>₹130/-</p>
+<button onclick="decreaseQty('Onion Capsicum Pizza')">−</button>
+<span id="Onion Capsicum Pizza">0</span>
+<button onclick="increaseQty('Onion Capsicum Pizza',130)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/corn-pizza.jpg">
+<div>
+<h3>Corn Pizza</h3>
+<p>₹130/-</p>
+<button onclick="decreaseQty('Corn Pizza')">−</button>
+<span id="Corn Pizza">0</span>
+<button onclick="increaseQty('Corn Pizza',130)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/tandoori-makhni-pizza.jpg">
+<div>
+<h3>Tandoori Makhni Pizza</h3>
+<p>₹150/-</p>
+<button onclick="decreaseQty('Tandoori Makhni Pizza')">−</button>
+<span id="Tandoori Makhni Pizza">0</span>
+<button onclick="increaseQty('Tandoori Makhni Pizza',150)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/tandoori-paneer-pizza.jpg">
+<div>
+<h3>Tandoori Makhni Paneer Pizza</h3>
+<p>₹170/-</p>
+<button onclick="decreaseQty('Tandoori Makhni Paneer Pizza')">−</button>
+<span id="Tandoori Makhni Paneer Pizza">0</span>
+<button onclick="increaseQty('Tandoori Makhni Paneer Pizza',170)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/mushroom-olives-pizza.jpg">
+<div>
+<h3>Mushroom & Olives Pizza</h3>
+<p>₹140/-</p>
+<button onclick="decreaseQty('Mushroom & Olives Pizza')">−</button>
+<span id="Mushroom & Olives Pizza">0</span>
+<button onclick="increaseQty('Mushroom & Olives Pizza',140)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/veg-supreme-pizza.jpg">
+<div>
+<h3>Veg Supreme Pizza</h3>
+<p>₹150/-</p>
+<button onclick="decreaseQty('Veg Supreme Pizza')">−</button>
+<span id="Veg Supreme Pizza">0</span>
+<button onclick="increaseQty('Veg Supreme Pizza',150)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/full-loaded-pizza.jpg">
+<div>
+<h3>Full Loaded Pizza</h3>
+<p>₹170/-</p>
+<button onclick="decreaseQty('Full Loaded Pizza')">−</button>
+<span id="Full Loaded Pizza">0</span>
+<button onclick="increaseQty('Full Loaded Pizza',170)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-mushroom-pizza.jpg">
+<div>
+<h3>Paneer Mushroom Pizza</h3>
+<p>₹170/-</p>
+<button onclick="decreaseQty('Paneer Mushroom Pizza')">−</button>
+<span id="Paneer Mushroom Pizza">0</span>
+<button onclick="increaseQty('Paneer Mushroom Pizza',170)">+</button>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<!-- PASTA -->
+
+<div class="category-section" id="pasta">
+
+<h2>🍝 PASTA</h2>
+
+
+<div class="item">
+<img src="images/red-sauce-pasta.jpg">
+<div>
+<h3>Red Sauce Pasta</h3>
+<p>₹120/-</p>
+<button onclick="decreaseQty('Red Sauce Pasta')">−</button>
+<span id="Red Sauce Pasta">0</span>
+<button onclick="increaseQty('Red Sauce Pasta',120)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/white-sauce-pasta.jpg">
+<div>
+<h3>White Sauce Pasta</h3>
+<p>₹120/-</p>
+<button onclick="decreaseQty('White Sauce Pasta')">−</button>
+<span id="White Sauce Pasta">0</span>
+<button onclick="increaseQty('White Sauce Pasta',120)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/mixed-sauce-pasta.jpg">
+<div>
+<h3>Mixed Sauce Pasta</h3>
+<p>₹120/-</p>
+<button onclick="decreaseQty('Mixed Sauce Pasta')">−</button>
+<span id="Mixed Sauce Pasta">0</span>
+<button onclick="increaseQty('Mixed Sauce Pasta',120)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/makhni-sauce-pasta.jpg">
+<div>
+<h3>Makhni Sauce Pasta</h3>
+<p>₹130/-</p>
+<button onclick="decreaseQty('Makhni Sauce Pasta')">−</button>
+<span id="Makhni Sauce Pasta">0</span>
+<button onclick="increaseQty('Makhni Sauce Pasta',130)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/alfredo-mushroom-pasta.jpg">
+<div>
+<h3>Alfredo Mushroom Pasta</h3>
+<p>₹130/-</p>
+<button onclick="decreaseQty('Alfredo Mushroom Pasta')">−</button>
+<span id="Alfredo Mushroom Pasta">0</span>
+<button onclick="increaseQty('Alfredo Mushroom Pasta',130)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/alfredo-paneer-pasta.jpg">
+<div>
+<h3>Alfredo Paneer Pasta</h3>
+<p>₹140/-</p>
+<button onclick="decreaseQty('Alfredo Paneer Pasta')">−</button>
+<span id="Alfredo Paneer Pasta">0</span>
+<button onclick="increaseQty('Alfredo Paneer Pasta',140)">+</button>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<!-- MOMOS -->
+
+<div class="category-section" id="momos">
+
+<h2>🥟 MOMOS</h2>
+
+
+<div class="item">
+<img src="images/steam-momos.jpg">
+<div>
+<h3>Steam Momos</h3>
+<p>₹60/-</p>
+<button onclick="decreaseQty('Steam Momos')">−</button>
+<span id="Steam Momos">0</span>
+<button onclick="increaseQty('Steam Momos',60)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/fried-momos.jpg">
+<div>
+<h3>Fried Momos</h3>
+<p>₹70/-</p>
+<button onclick="decreaseQty('Fried Momos')">−</button>
+<span id="Fried Momos">0</span>
+<button onclick="increaseQty('Fried Momos',70)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/tandoori-momos-gravy.jpg">
+<div>
+<h3>Tandoori Momos Gravy</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Tandoori Momos Gravy')">−</button>
+<span id="Tandoori Momos Gravy">0</span>
+<button onclick="increaseQty('Tandoori Momos Gravy',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/afgani-momos.jpg">
+<div>
+<h3>Afgani Momos</h3>
+<p>₹120/-</p>
+<button onclick="decreaseQty('Afgani Momos')">−</button>
+<span id="Afgani Momos">0</span>
+<button onclick="increaseQty('Afgani Momos',120)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/honey-chilli-momos.jpg">
+<div>
+<h3>Honey Chilli Momos</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Honey Chilli Momos')">−</button>
+<span id="Honey Chilli Momos">0</span>
+<button onclick="increaseQty('Honey Chilli Momos',100)">+</button>
+</div>
+</div>
+
+
+</div>
+<!-- KATHI ROLL -->
+
+<div class="category-section" id="roll">
+
+<h2>🌯 KATHI ROLL</h2>
+
+
+<div class="item">
+<img src="images/noodles-roll.jpg">
+<div>
+<h3>Noodles Roll</h3>
+<p>₹70/-</p>
+<button onclick="decreaseQty('Noodles Roll')">−</button>
+<span id="Noodles Roll">0</span>
+<button onclick="increaseQty('Noodles Roll',70)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/veg-roll.jpg">
+<div>
+<h3>Veg Roll</h3>
+<p>₹80/-</p>
+<button onclick="decreaseQty('Veg Roll')">−</button>
+<span id="Veg Roll">0</span>
+<button onclick="increaseQty('Veg Roll',80)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-roll.jpg">
+<div>
+<h3>Paneer Roll</h3>
+<p>₹90/-</p>
+<button onclick="decreaseQty('Paneer Roll')">−</button>
+<span id="Paneer Roll">0</span>
+<button onclick="increaseQty('Paneer Roll',90)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-tikka-roll.jpg">
+<div>
+<h3>Paneer Tikka Roll</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Paneer Tikka Roll')">−</button>
+<span id="Paneer Tikka Roll">0</span>
+<button onclick="increaseQty('Paneer Tikka Roll',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/soya-chaap-roll.jpg">
+<div>
+<h3>Soya Chaap Roll</h3>
+<p>₹90/-</p>
+<button onclick="decreaseQty('Soya Chaap Roll')">−</button>
+<span id="Soya Chaap Roll">0</span>
+<button onclick="increaseQty('Soya Chaap Roll',90)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/soya-afghani-roll.jpg">
+<div>
+<h3>Soya Afghani Roll</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Soya Afghani Roll')">−</button>
+<span id="Soya Afghani Roll">0</span>
+<button onclick="increaseQty('Soya Afghani Roll',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-mushroom-chilly-roll.jpg">
+<div>
+<h3>Paneer Mushroom Chilly Roll</h3>
+<p>₹110/-</p>
+<button onclick="decreaseQty('Paneer Mushroom Chilly Roll')">−</button>
+<span id="Paneer Mushroom Chilly Roll">0</span>
+<button onclick="increaseQty('Paneer Mushroom Chilly Roll',110)">+</button>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<!-- WRAP BURGER SANDWICH -->
+
+<div class="category-section" id="burger">
+
+<h2>🍔 WRAP | BURGER | SANDWICH</h2>
+
+
+<div class="item">
+<img src="images/veg-wrap.jpg">
+<div>
+<h3>Veg Wrap</h3>
+<p>₹80/-</p>
+<button onclick="decreaseQty('Veg Wrap')">−</button>
+<span id="Veg Wrap">0</span>
+<button onclick="increaseQty('Veg Wrap',80)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-wrap.jpg">
+<div>
+<h3>Paneer Wrap</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Paneer Wrap')">−</button>
+<span id="Paneer Wrap">0</span>
+<button onclick="increaseQty('Paneer Wrap',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/wheat-paneer-wrap.jpg">
+<div>
+<h3>Wheat Paneer Wrap</h3>
+<p>₹110/-</p>
+<button onclick="decreaseQty('Wheat Paneer Wrap')">−</button>
+<span id="Wheat Paneer Wrap">0</span>
+<button onclick="increaseQty('Wheat Paneer Wrap',110)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/veg-sandwich.jpg">
+<div>
+<h3>Veg Sandwich</h3>
+<p>₹90/-</p>
+<button onclick="decreaseQty('Veg Sandwich')">−</button>
+<span id="Veg Sandwich">0</span>
+<button onclick="increaseQty('Veg Sandwich',90)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-sandwich.jpg">
+<div>
+<h3>Paneer Sandwich</h3>
+<p>₹110/-</p>
+<button onclick="decreaseQty('Paneer Sandwich')">−</button>
+<span id="Paneer Sandwich">0</span>
+<button onclick="increaseQty('Paneer Sandwich',110)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/noodles-burger.jpg">
+<div>
+<h3>Noodles Burger</h3>
+<p>₹50/-</p>
+<button onclick="decreaseQty('Noodles Burger')">−</button>
+<span id="Noodles Burger">0</span>
+<button onclick="increaseQty('Noodles Burger',50)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/veg-burger.jpg">
+<div>
+<h3>Veg Burger</h3>
+<p>₹70/-</p>
+<button onclick="decreaseQty('Veg Burger')">−</button>
+<span id="Veg Burger">0</span>
+<button onclick="increaseQty('Veg Burger',70)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-burger.jpg">
+<div>
+<h3>Paneer Burger</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Paneer Burger')">−</button>
+<span id="Paneer Burger">0</span>
+<button onclick="increaseQty('Paneer Burger',100)">+</button>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<!-- CRISPY NATION -->
+
+<div class="category-section" id="crispy">
+
+<h2>🍿 CRISPY NATION</h2>
+
+
+<div class="item">
+<img src="images/kurkure-spring-roll.jpg">
+<div>
+<h3>Kurkure Spring Roll</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Kurkure Spring Roll')">−</button>
+<span id="Kurkure Spring Roll">0</span>
+<button onclick="increaseQty('Kurkure Spring Roll',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/kurkure-burger.jpg">
+<div>
+<h3>Kurkure Burger</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Kurkure Burger')">−</button>
+<span id="Kurkure Burger">0</span>
+<button onclick="increaseQty('Kurkure Burger',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/kurkure-momos.jpg">
+<div>
+<h3>Kurkure Momos</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Kurkure Momos')">−</button>
+<span id="Kurkure Momos">0</span>
+<button onclick="increaseQty('Kurkure Momos',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/kurkure-paneer.jpg">
+<div>
+<h3>Kurkure Paneer</h3>
+<p>₹140/-</p>
+<button onclick="decreaseQty('Kurkure Paneer')">−</button>
+<span id="Kurkure Paneer">0</span>
+<button onclick="increaseQty('Kurkure Paneer',140)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/kurkure-fries.jpg">
+<div>
+<h3>Kurkure Fries</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Kurkure Fries')">−</button>
+<span id="Kurkure Fries">0</span>
+<button onclick="increaseQty('Kurkure Fries',100)">+</button>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<!-- TIKKA -->
+
+<div class="category-section" id="tikka">
+
+<h2>🍢 TIKKA</h2>
+
+
+<div class="item">
+<img src="images/paneer-tikka.jpg">
+<div>
+<h3>Paneer Tikka (8 Pcs)</h3>
+<p>₹200/-</p>
+<button onclick="decreaseQty('Paneer Tikka')">−</button>
+<span id="Paneer Tikka">0</span>
+<button onclick="increaseQty('Paneer Tikka',200)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-mushroom-tikka.jpg">
+<div>
+<h3>Paneer Mushroom Tikka</h3>
+<p>₹200/-</p>
+<button onclick="decreaseQty('Paneer Mushroom Tikka')">−</button>
+<span id="Paneer Mushroom Tikka">0</span>
+<button onclick="increaseQty('Paneer Mushroom Tikka',200)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/soya-chaap.jpg">
+<div>
+<h3>Soya Chaap</h3>
+<p>₹140/-</p>
+<button onclick="decreaseQty('Soya Chaap')">−</button>
+<span id="Soya Chaap">0</span>
+<button onclick="increaseQty('Soya Chaap',140)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/malai-chaap.jpg">
+<div>
+<h3>Malai Chaap</h3>
+<p>₹150/-</p>
+<button onclick="decreaseQty('Malai Chaap')">−</button>
+<span id="Malai Chaap">0</span>
+<button onclick="increaseQty('Malai Chaap',150)">+</button>
+</div>
+</div>
+
+
+</div>
+<!-- DESI CHINESE -->
+
+<div class="category-section" id="chinese">
+
+<h2>🇨🇳 DESI CHINESE</h2>
+
+
+<div class="item">
+<img src="images/veg-noodles.jpg">
+<div>
+<h3>Veg Noodles</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Veg Noodles')">−</button>
+<span id="Veg Noodles">0</span>
+<button onclick="increaseQty('Veg Noodles',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-noodles.jpg">
+<div>
+<h3>Paneer Noodles</h3>
+<p>₹120/-</p>
+<button onclick="decreaseQty('Paneer Noodles')">−</button>
+<span id="Paneer Noodles">0</span>
+<button onclick="increaseQty('Paneer Noodles',120)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/honey-chilli-potato.jpg">
+<div>
+<h3>Honey Chilly Potato</h3>
+<p>₹120/-</p>
+<button onclick="decreaseQty('Honey Chilly Potato')">−</button>
+<span id="Honey Chilly Potato">0</span>
+<button onclick="increaseQty('Honey Chilly Potato',120)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/veg-manchurian.jpg">
+<div>
+<h3>Veg Manchurian</h3>
+<p>₹120/-</p>
+<button onclick="decreaseQty('Veg Manchurian')">−</button>
+<span id="Veg Manchurian">0</span>
+<button onclick="increaseQty('Veg Manchurian',120)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/veg-fried-rice.jpg">
+<div>
+<h3>Veg Fried Rice</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Veg Fried Rice')">−</button>
+<span id="Veg Fried Rice">0</span>
+<button onclick="increaseQty('Veg Fried Rice',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-chilly.jpg">
+<div>
+<h3>Paneer Chilly</h3>
+<p>₹160/-</p>
+<button onclick="decreaseQty('Paneer Chilly')">−</button>
+<span id="Paneer Chilly">0</span>
+<button onclick="increaseQty('Paneer Chilly',160)">+</button>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<!-- MAIN COURSE -->
+
+<div class="category-section" id="main">
+
+<h2>🍲 MAIN COURSE</h2>
+
+
+<div class="item">
+<img src="images/paneer-bhurji.jpg">
+<div>
+<h3>Paneer Bhurji</h3>
+<p>₹170/-</p>
+<button onclick="decreaseQty('Paneer Bhurji')">−</button>
+<span id="Paneer Bhurji">0</span>
+<button onclick="increaseQty('Paneer Bhurji',170)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/shahi-paneer.jpg">
+<div>
+<h3>Shahi Paneer</h3>
+<p>₹180/-</p>
+<button onclick="decreaseQty('Shahi Paneer')">−</button>
+<span id="Shahi Paneer">0</span>
+<button onclick="increaseQty('Shahi Paneer',180)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-do-pyazza.jpg">
+<div>
+<h3>Paneer Do Pyazza</h3>
+<p>₹180/-</p>
+<button onclick="decreaseQty('Paneer Do Pyazza')">−</button>
+<span id="Paneer Do Pyazza">0</span>
+<button onclick="increaseQty('Paneer Do Pyazza',180)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/kadhai-paneer.jpg">
+<div>
+<h3>Kadhai Paneer</h3>
+<p>₹180/-</p>
+<button onclick="decreaseQty('Kadhai Paneer')">−</button>
+<span id="Kadhai Paneer">0</span>
+<button onclick="increaseQty('Kadhai Paneer',180)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-tikka-butter-masala.jpg">
+<div>
+<h3>Paneer Tikka Butter Masala</h3>
+<p>₹200/-</p>
+<button onclick="decreaseQty('Paneer Tikka Butter Masala')">−</button>
+<span id="Paneer Tikka Butter Masala">0</span>
+<button onclick="increaseQty('Paneer Tikka Butter Masala',200)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/masala-chaap-gravy.jpg">
+<div>
+<h3>Masala Chaap Gravy</h3>
+<p>₹150/-</p>
+<button onclick="decreaseQty('Masala Chaap Gravy')">−</button>
+<span id="Masala Chaap Gravy">0</span>
+<button onclick="increaseQty('Masala Chaap Gravy',150)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/plain-roti.jpg">
+<div>
+<h3>Plain Roti</h3>
+<p>₹10/-</p>
+<button onclick="decreaseQty('Plain Roti')">−</button>
+<span id="Plain Roti">0</span>
+<button onclick="increaseQty('Plain Roti',10)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/butter-roti.jpg">
+<div>
+<h3>Butter Roti</h3>
+<p>₹15/-</p>
+<button onclick="decreaseQty('Butter Roti')">−</button>
+<span id="Butter Roti">0</span>
+<button onclick="increaseQty('Butter Roti',15)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/plain-parantha.jpg">
+<div>
+<h3>Plain Parantha</h3>
+<p>₹30/-</p>
+<button onclick="decreaseQty('Plain Parantha')">−</button>
+<span id="Plain Parantha">0</span>
+<button onclick="increaseQty('Plain Parantha',30)">+</button>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<!-- MEAL BOX -->
+
+<div class="category-section" id="meal">
+
+<h2>🍱 MEAL BOX</h2>
+
+
+<div class="item">
+<img src="images/veg-burger-meal.jpg">
+<div>
+<h3>Veg Burger + Fries</h3>
+<p>₹130/-</p>
+<button onclick="decreaseQty('Veg Burger Meal')">−</button>
+<span id="Veg Burger Meal">0</span>
+<button onclick="increaseQty('Veg Burger Meal',130)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-burger-meal.jpg">
+<div>
+<h3>Paneer Burger + Fries</h3>
+<p>₹160/-</p>
+<button onclick="decreaseQty('Paneer Burger Meal')">−</button>
+<span id="Paneer Burger Meal">0</span>
+<button onclick="increaseQty('Paneer Burger Meal',160)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/veg-sandwich-meal.jpg">
+<div>
+<h3>Veg Sandwich + Fries</h3>
+<p>₹150/-</p>
+<button onclick="decreaseQty('Veg Sandwich Meal')">−</button>
+<span id="Veg Sandwich Meal">0</span>
+<button onclick="increaseQty('Veg Sandwich Meal',150)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-sandwich-meal.jpg">
+<div>
+<h3>Paneer Sandwich + Fries</h3>
+<p>₹200/-</p>
+<button onclick="decreaseQty('Paneer Sandwich Meal')">−</button>
+<span id="Paneer Sandwich Meal">0</span>
+<button onclick="increaseQty('Paneer Sandwich Meal',200)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/veg-wrap-meal.jpg">
+<div>
+<h3>Veg Wrap + Fries</h3>
+<p>₹140/-</p>
+<button onclick="decreaseQty('Veg Wrap Meal')">−</button>
+<span id="Veg Wrap Meal">0</span>
+<button onclick="increaseQty('Veg Wrap Meal',140)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-wrap-meal.jpg">
+<div>
+<h3>Paneer Wrap + Fries</h3>
+<p>₹160/-</p>
+<button onclick="decreaseQty('Paneer Wrap Meal')">−</button>
+<span id="Paneer Wrap Meal">0</span>
+<button onclick="increaseQty('Paneer Wrap Meal',160)">+</button>
+</div>
+</div>
+
+</div>
+<!-- STREET FOOD -->
+
+<div class="category-section" id="street">
+
+<h2>🍝 STREET FOOD</h2>
+
+
+<div class="item">
+<img src="images/noodles-spring-roll.jpg">
+<div>
+<h3>Noodles Spring Roll</h3>
+<p>₹60/-</p>
+<button onclick="decreaseQty('Noodles Spring Roll')">−</button>
+<span id="Noodles Spring Roll">0</span>
+<button onclick="increaseQty('Noodles Spring Roll',60)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/veg-spring-roll.jpg">
+<div>
+<h3>Veg Spring Roll</h3>
+<p>₹70/-</p>
+<button onclick="decreaseQty('Veg Spring Roll')">−</button>
+<span id="Veg Spring Roll">0</span>
+<button onclick="increaseQty('Veg Spring Roll',70)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/pav-bhaji.jpg">
+<div>
+<h3>Pav Bhaji</h3>
+<p>₹80/-</p>
+<button onclick="decreaseQty('Pav Bhaji')">−</button>
+<span id="Pav Bhaji">0</span>
+<button onclick="increaseQty('Pav Bhaji',80)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/chhole-bhature.jpg">
+<div>
+<h3>Chhole Bhature</h3>
+<p>₹80/-</p>
+<button onclick="decreaseQty('Chhole Bhature')">−</button>
+<span id="Chhole Bhature">0</span>
+<button onclick="increaseQty('Chhole Bhature',80)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-rice.jpg">
+<div>
+<h3>Paneer Rice</h3>
+<p>₹100/-</p>
+<button onclick="decreaseQty('Paneer Rice')">−</button>
+<span id="Paneer Rice">0</span>
+<button onclick="increaseQty('Paneer Rice',100)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/gobhi-pakoda.jpg">
+<div>
+<h3>Gobhi Pakoda (250gm)</h3>
+<p>₹140/-</p>
+<button onclick="decreaseQty('Gobhi Pakoda')">−</button>
+<span id="Gobhi Pakoda">0</span>
+<button onclick="increaseQty('Gobhi Pakoda',140)">+</button>
+</div>
+</div>
+
+
+<div class="item">
+<img src="images/paneer-pakoda.jpg">
+<div>
+<h3>Paneer Pakoda (250gm)</h3>
+<p>₹170/-</p>
+<button onclick="decreaseQty('Paneer Pakoda')">−</button>
+<span id="Paneer Pakoda">0</span>
+<button onclick="increaseQty('Paneer Pakoda',170)">+</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- HAPPY OFFERS -->
+
+<section class="offers">
+
+<h2>🎉 HAPPY OFFERS</h2>
+
+<p>🎁 Buy 6 Veg Burger and get 1 Veg Burger FREE</p>
+
+<p>🎁 Buy 3 Any Pasta and get 1 Plate Spring Roll FREE</p>
+
+<p>🎁 Buy Any 3 Pizza and get Fried Momos FREE</p>
+
+<p>🥤 Buy 6 Same Flavour Shake and get ₹10 discount each shake</p>
+
+<p>🚚 Hostel delivery free</p>
+
+<div id="offersMessage"></div>
+
+</section>
+
+
+
+
+
+<!-- CUSTOMER DETAILS -->
+
+<div class="customer-details">
+
+<h2>📲 ORDER DETAILS</h2>
+
+
+<input 
+type="text" 
+id="customerName"
+placeholder="Enter Your Name">
+
+
+<input 
+type="tel"
+id="customerPhone"
+placeholder="Enter Phone Number">
+
+
+<button 
+onclick="sendWhatsApp()"
+class="whatsapp-btn">
+
+ORDER ON WHATSAPP
+
+</button>
+
+</div>
+
+
+
+
+
+<!-- CART -->
+
+<div class="cart">
+
+<h2>🛒 Your Cart</h2>
+
+
+<div id="cartItems"></div>
+
+
+<p id="discount"></p>
+
+
+<h3>
+Total: ₹<span id="total">0</span>
+</h3>
+
+
+<button 
+onclick="payNow()"
+class="pay-btn">
+
+PAY NOW
+
+</button>
+
+
+</div>
+
+
+
+
+
+<footer>
+
+<p>© Dockyard Le Bistro</p>
+
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
