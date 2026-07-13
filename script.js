@@ -238,3 +238,20 @@ document
 
 
 });
+function payNow(){
+
+    let total = document.getElementById("total").innerText;
+
+    if(total == "0"){
+        alert("Please add items first");
+        return;
+    }
+
+    let upi =
+    "upi://pay?pa=Q051599316@ybl" +
+    "&pn=Dockyard%20Le%20Bistro" +
+    "&am=" + total +
+    "&cu=INR";
+
+    window.location.href = upi;
+}
