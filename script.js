@@ -73,7 +73,7 @@ function updateDisplay(name){
 
 // UPDATE CART
 function updateCart(){
-
+checkOffers();
     let cartBox = document.getElementById("cartItems");
 
     let totalBox = document.getElementById("total");
@@ -221,5 +221,84 @@ function payNow(){
 
 
     window.location.href = upiURL;
+
+}
+function checkOffers(){
+
+    let offerText = "";
+
+
+    // Buy 6 Veg Burger get 1 FREE
+    if(cart["Veg Burger"] && cart["Veg Burger"].qty >= 6){
+
+        offerText += "🎁 1 Veg Burger FREE<br>";
+
+    }
+
+
+    // Buy 3 Pasta get Spring Roll FREE
+    let pastaCount = 0;
+
+    let pastaItems = [
+        "Red Sauce Pasta",
+        "White Sauce Pasta",
+        "Mixed Sauce Pasta",
+        "Makhni Sauce Pasta",
+        "Alfredo Mushroom Pasta",
+        "Alfredo Paneer Pasta"
+    ];
+
+
+    pastaItems.forEach(item=>{
+
+        if(cart[item]){
+
+            pastaCount += cart[item].qty;
+
+        }
+
+    });
+
+
+    if(pastaCount >= 3){
+
+        offerText += "🎁 1 Plate Spring Roll FREE<br>";
+
+    }
+
+
+
+    // Buy 3 Pizza get Fried Momos FREE
+    let pizzaCount = 0;
+
+
+    for(let item in cart){
+
+        if(item.includes("Pizza")){
+
+            pizzaCount += cart[item].qty;
+
+        }
+
+    }
+
+
+    if(pizzaCount >= 3){
+
+        offerText += "🎁 Fried Momos FREE<br>";
+
+    }
+
+
+
+    if(offerText!=""){
+
+        document.getElementById("cartItems").innerHTML +=
+
+        `<div style="color:green;font-weight:bold">
+        ${offerText}
+        </div>`;
+
+    }
 
 }
