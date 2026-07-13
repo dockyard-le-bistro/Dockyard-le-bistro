@@ -261,3 +261,78 @@ to{
 img{
     background:#eee;
 }
+.customer-details{
+    background:white;
+    margin:15px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+
+.customer-details h2{
+    color:#8b0000;
+    margin-bottom:15px;
+}
+
+
+.customer-details input{
+
+    width:90%;
+    padding:12px;
+    margin:8px 0;
+
+    border-radius:10px;
+    border:1px solid #ccc;
+
+    font-size:16px;
+
+}
+
+
+
+.whatsapp-btn{
+
+    width:220px;
+    height:45px;
+
+    background:#25D366;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    margin-top:10px;
+
+}
+
+
+
+.whatsapp-btn:hover{
+
+    background:#128C7E;
+
+}
+
+
+
+.cart{
+
+    margin-top:20px;
+
+}
+
+
+
+.cart p{
+
+    padding:5px;
+
+    border-bottom:1px solid #ddd;
+
+}
