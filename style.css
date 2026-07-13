@@ -376,3 +376,70 @@ img{
 }
 
 }
+#offersMessage{
+    background:#e8ffe8;
+    color:green;
+    padding:10px;
+    margin:10px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+
+
+.delivery-note{
+    background:#fff3cd;
+    color:#7a4b00;
+    padding:12px;
+    margin:15px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:bold;
+}
+
+
+
+.customer-details{
+    background:white;
+    padding:20px;
+    margin:15px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+    text-align:center;
+}
+
+
+
+.customer-details input{
+
+    width:90%;
+    padding:12px;
+    margin:8px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+
+}
+
+
+
+.whatsapp-btn{
+
+    background:#25D366;
+    color:white;
+    width:220px;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    margin-top:10px;
+
+}
+
+
+
+.whatsapp-btn:hover{
+
+    background:#128C7E;
+
+}
