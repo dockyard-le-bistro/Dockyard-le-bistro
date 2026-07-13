@@ -1,214 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap');
-
-
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
-
 
 body{
-    font-family:'Poppins',sans-serif;
-    background:linear-gradient(135deg,#fff4e6,#e8f5ff,#fff9d9);
-    color:#222;
+
+font-family:'Poppins',sans-serif;
+
+background:linear-gradient(135deg,#fff3e0,#e3f2fd,#fffde7);
+
+color:#222;
+
 }
 
-
-/* HEADER */
 
 .hero{
-    text-align:center;
-    padding:35px 15px;
-    background:linear-gradient(135deg,#d90429,#ffb703,#0077b6);
-    color:white;
-    border-radius:0 0 35px 35px;
-    box-shadow:0 5px 20px rgba(0,0,0,.2);
+
+text-align:center;
+
+padding:30px 15px;
+
+background:linear-gradient(135deg,#d90429,#ffb703,#0077b6);
+
+color:white;
+
+border-radius:0 0 35px 35px;
+
 }
+
+
+.cafe-logo{
+
+width:130px;
+
+height:130px;
+
+object-fit:contain;
+
+margin-bottom:15px;
+
+background:white;
+
+border-radius:50%;
+
+padding:8px;
+
+}
+
 
 
 .hero h1{
-    font-family:'Playfair Display',serif;
-    font-size:42px;
-    letter-spacing:2px;
-    text-shadow:2px 2px 5px #333;
+
+font-family:'Playfair Display',serif;
+
+font-size:42px;
+
+letter-spacing:2px;
+
 }
 
 
 .hero h2{
-    margin-top:12px;
-    font-size:20px;
+
+margin-top:10px;
+
+font-size:20px;
+
 }
 
 
-.hero p{
-    margin-top:8px;
-    font-size:15px;
-}
-
-
-
-/* MENU */
 
 .menu{
-    padding:15px;
+
+padding:15px;
+
 }
+
 
 
 .category{
-    margin:25px 0;
+
+margin:25px 0;
+
 }
 
 
-/* CATEGORY HEADING */
 
 .category-title{
 
-    background:linear-gradient(90deg,#d90429,#ffb703);
-    color:white;
+background:linear-gradient(90deg,#d90429,#ffb703);
 
-    padding:15px;
-    border-radius:18px;
+color:white;
 
-    font-family:'Playfair Display',serif;
+padding:15px;
 
-    font-size:24px;
-    font-weight:bold;
+border-radius:20px;
 
-    text-align:center;
+text-align:center;
 
-    box-shadow:0 5px 12px rgba(0,0,0,.15);
+font-size:23px;
+
+font-weight:700;
+
+box-shadow:0 5px 15px #ccc;
 
 }
 
 
-
-/* FOOD GRID */
 
 .food-grid{
 
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
+display:grid;
 
-    margin-top:15px;
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+margin-top:15px;
 
 }
 
 
-
-/* FOOD CARD */
 
 .food-card{
 
-    background:white;
+background:white;
 
-    padding:15px 10px;
+border:3px solid #0077b6;
 
-    border-radius:18px;
+border-radius:20px;
 
-    text-align:center;
+padding:15px 10px;
 
-    border:3px solid #0077b6;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.12);
+text-align:center;
 
 }
+
 
 
 .food-card h3{
 
-    font-size:15px;
-    min-height:45px;
+font-size:15px;
+
+min-height:45px;
 
 }
+
 
 
 .food-card span{
 
-    display:block;
+display:block;
 
-    color:#d90429;
+color:#d90429;
 
-    font-size:18px;
+font-size:18px;
 
-    font-weight:700;
+font-weight:bold;
 
-    margin:8px;
-
-}
-
-
-
-/* ADD BUTTON */
-
-.food-card button{
-
-    background:#ffb703;
-
-    color:#111;
-
-    border:none;
-
-    padding:8px 18px;
-
-    border-radius:25px;
-
-    font-weight:bold;
-
-    cursor:pointer;
+margin:8px;
 
 }
 
 
 
-.food-card button:hover{
-
-    background:#d90429;
-    color:white;
-
-}
+/* QUANTITY BUTTONS */
 
 
+.qty-box{
 
-/* OFFERS */
+display:flex;
 
-.offer{
+justify-content:center;
 
-    background:#fff3cd;
+align-items:center;
 
-    padding:20px;
+gap:12px;
 
-    border-radius:20px;
-
-}
-
-
-.offer p{
-
-    margin:10px 0;
-
-    font-weight:500;
+margin-top:10px;
 
 }
 
 
 
-/* DELIVERY */
+.qty-box button{
 
-.delivery-note{
+width:35px;
 
-    background:#0077b6;
+height:35px;
 
-    color:white;
+border:none;
 
-    padding:20px;
+border-radius:50%;
 
-    text-align:center;
+background:#d90429;
 
-    border-radius:20px;
+color:white;
 
-    margin:25px 0;
+font-size:22px;
+
+font-weight:bold;
+
+}
+
+
+
+.qty-box span{
+
+font-size:18px;
+
+font-weight:bold;
+
+color:#0077b6;
 
 }
 
@@ -216,39 +220,34 @@ body{
 
 /* ORDER BOX */
 
+
 .order-box{
 
-    background:#d90429;
+background:#d90429;
 
-    color:white;
+color:white;
 
-    padding:25px;
+padding:25px;
 
-    border-radius:25px;
+border-radius:25px;
 
-}
-
-
-.order-box h2{
-
-    text-align:center;
-
-    margin-bottom:15px;
+margin-top:30px;
 
 }
+
 
 
 .order-box input{
 
-    width:100%;
+width:100%;
 
-    padding:12px;
+padding:12px;
 
-    margin:8px 0;
+margin:8px 0;
 
-    border-radius:10px;
+border-radius:10px;
 
-    border:none;
+border:none;
 
 }
 
@@ -256,15 +255,47 @@ body{
 
 #cartItems{
 
-    background:white;
+background:white;
 
-    color:#222;
+color:#222;
 
-    padding:15px;
+padding:15px;
 
-    border-radius:15px;
+border-radius:15px;
 
-    margin:15px 0;
+margin:15px 0;
+
+}
+
+
+
+.cart-row{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin:12px 0;
+
+}
+
+
+
+.cart-row button{
+
+background:#0077b6;
+
+color:white;
+
+border:none;
+
+border-radius:50%;
+
+width:30px;
+
+height:30px;
 
 }
 
@@ -272,124 +303,35 @@ body{
 
 .place-order{
 
-    width:100%;
+width:100%;
 
-    padding:14px;
-
-    border:none;
-
-    border-radius:25px;
-
-    background:#ffb703;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-}
-
-
-
-/* FOOTER */
-
-footer{
-
-    text-align:center;
-
-    padding:25px;
-
-    color:#d90429;
-
-    font-family:'Playfair Display',serif;
-
-}
-
-
-
-/* MOBILE */
-
-@media(max-width:500px){
-
-.hero h1{
-
-    font-size:32px;
-
-}
-
-
-.category-title{
-
-    font-size:20px;
-
-}
-
-
-.food-grid{
-
-    gap:10px;
-
-}
-
-
-.food-card{
-
-    padding:12px 8px;
-
-}
-
-}
-
-.call-box{
-
-background:#0077b6;
-color:white;
-
-padding:25px;
-
-border-radius:25px;
-
-text-align:center;
-
-margin:25px 0;
-
-}
-
-
-.call-box h2{
-
-font-family:'Playfair Display',serif;
-
-}
-
-
-.call-buttons{
-
-display:flex;
-
-gap:12px;
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-margin-top:15px;
-
-}
-
-
-.call-buttons button{
+padding:14px;
 
 background:#ffb703;
 
 border:none;
 
-padding:12px 18px;
-
 border-radius:25px;
+
+font-size:18px;
 
 font-weight:bold;
 
-font-size:15px;
+}
+
+
+
+.call-box{
+
+background:#0077b6;
+
+color:white;
+
+padding:20px;
+
+border-radius:25px;
+
+text-align:center;
 
 }
 
@@ -423,8 +365,28 @@ font-size:30px;
 
 text-decoration:none;
 
-box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
 
-z-index:1000;
+
+
+footer{
+
+text-align:center;
+
+padding:25px;
+
+color:#d90429;
+
+}
+
+
+
+@media(max-width:500px){
+
+.hero h1{
+
+font-size:32px;
+
+}
 
 }
