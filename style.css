@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#fff4e6,#e8f5ff,#fff9d9);
+    color:#222;
+}
+
+
+/* HEADER */
+
+.hero{
+    text-align:center;
+    padding:35px 15px;
+    background:linear-gradient(135deg,#d90429,#ffb703,#0077b6);
+    color:white;
+    border-radius:0 0 35px 35px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    letter-spacing:2px;
+    text-shadow:2px 2px 5px #333;
+}
+
+
+.hero h2{
+    margin-top:12px;
+    font-size:20px;
+}
+
+
+.hero p{
+    margin-top:8px;
+    font-size:15px;
+}
+
+
+
+/* MENU */
+
+.menu{
+    padding:15px;
+}
+
+
+.category{
+    margin:25px 0;
+}
+
+
+/* CATEGORY HEADING */
+
+.category-title{
+
+    background:linear-gradient(90deg,#d90429,#ffb703);
+    color:white;
+
+    padding:15px;
+    border-radius:18px;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:24px;
+    font-weight:bold;
+
+    text-align:center;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+
+}
+
+
+
+/* FOOD GRID */
+
+.food-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+
+    margin-top:15px;
+
+}
+
+
+
+/* FOOD CARD */
+
+.food-card{
+
+    background:white;
+
+    padding:15px 10px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    border:3px solid #0077b6;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+}
+
+
+.food-card h3{
+
+    font-size:15px;
+    min-height:45px;
+
+}
+
+
+.food-card span{
+
+    display:block;
+
+    color:#d90429;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    margin:8px;
+
+}
+
+
+
+/* ADD BUTTON */
+
+.food-card button{
+
+    background:#ffb703;
+
+    color:#111;
+
+    border:none;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+
+.food-card button:hover{
+
+    background:#d90429;
+    color:white;
+
+}
+
+
+
+/* OFFERS */
+
+.offer{
+
+    background:#fff3cd;
+
+    padding:20px;
+
+    border-radius:20px;
+
+}
+
+
+.offer p{
+
+    margin:10px 0;
+
+    font-weight:500;
+
+}
+
+
+
+/* DELIVERY */
+
+.delivery-note{
+
+    background:#0077b6;
+
+    color:white;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    margin:25px 0;
+
+}
+
+
+
+/* ORDER BOX */
+
+.order-box{
+
+    background:#d90429;
+
+    color:white;
+
+    padding:25px;
+
+    border-radius:25px;
+
+}
+
+
+.order-box h2{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+
+.order-box input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin:8px 0;
+
+    border-radius:10px;
+
+    border:none;
+
+}
+
+
+
+#cartItems{
+
+    background:white;
+
+    color:#222;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    margin:15px 0;
+
+}
+
+
+
+.place-order{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#ffb703;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#d90429;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+
+.category-title{
+
+    font-size:20px;
+
+}
+
+
+.food-grid{
+
+    gap:10px;
+
+}
+
+
+.food-card{
+
+    padding:12px 8px;
+
+}
+
+}
