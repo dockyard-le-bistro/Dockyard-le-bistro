@@ -248,7 +248,7 @@ function payNow(){
     }
 
     let upi =
-    "upi://pay?pa=Q051599316@ybl" +
+    "upi://pay?pa=Q051599316%40ybl" +
     "&pn=Dockyard%20Le%20Bistro" +
     "&am=" + total +
     "&cu=INR";
