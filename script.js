@@ -180,7 +180,20 @@ function updateCart(){
 
 
 
-// ================= HAPPY OFFERS =================
+// ================= HAPPY OFFERS let count = 0;
+
+for(let item in cart){
+
+count += cart[item].qty;
+
+}
+
+
+if(document.getElementById("cartCount")){
+
+document.getElementById("cartCount").innerHTML=count;
+
+}=================
 
 
 function checkOffers(){
@@ -532,6 +545,16 @@ document.querySelectorAll(".category-section")
 .forEach(section=>{
 
 section.style.display="block";
+
+});
+
+}
+function goToCart(){
+
+document.querySelector(".cart")
+.scrollIntoView({
+
+behavior:"smooth"
 
 });
 
