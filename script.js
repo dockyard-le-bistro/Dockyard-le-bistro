@@ -637,50 +637,8 @@ function sendWhatsApp(){
 // UPI PAYMENT
 // ===============================
 
-function payNow(){
 
 
-
-    if(Object.keys(cart).length === 0){
-
-
-        alert("Please add items first.");
-
-        return;
-
-
-    }
-
-
-
-    if(subtotal < 200){
-
-
-        alert("A minimum order of ₹200 is required for deliveries beyond 500 metres.");
-
-        return;
-
-
-    }
-
-
-
-    let upiLink =
-
-    "upi://pay?pa=" +
-    UPI_ID +
-    "&pn=Dockyard%20Le%20Bistro" +
-    "&am=" +
-    finalTotal +
-    "&cu=INR";
-
-
-
-    window.location.href = upiLink;
-
-
-
-}
 
 
 
@@ -689,7 +647,38 @@ function payNow(){
 
 // ===============================
 // GO TO CART
-// ===============================
+// ========function payNow(){
+
+    if(Object.keys(cart).length === 0){
+
+        alert("Please add items first.");
+        return;
+
+    }
+
+
+    if(finalTotal < 200){
+
+        alert("A minimum order of ₹200 is required for deliveries beyond 500 metres.");
+        return;
+
+    }
+
+
+    let upiLink = 
+    "upi://pay" +
+    "?pa=" + UPI_ID +
+    "&pn=Dockyard%20Le%20Bistro" +
+    "&tr=ORDER" + Date.now() +
+    "&tn=Food%20Order" +
+    "&am=" + finalTotal +
+    "&cu=INR";
+
+
+    window.location.href = upiLink;
+
+
+}=======================
 
 function goToCart(){
 
