@@ -305,9 +305,8 @@ function sendWhatsApp(){
         alert("Cart is Empty");
         return;
 
+
     }
-
-
     let message="🍽️ *Dockyard Le Bistro Order*%0A%0A";
 
 
