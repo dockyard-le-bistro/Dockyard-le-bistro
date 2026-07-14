@@ -129,6 +129,32 @@ function updateCart(){
     renderCart();
 
 }
+// UPDATE MENU QUANTITY NUMBERS
+
+Object.values(cart).forEach(item=>{
+
+    let qtyBox = document.getElementById(item.name);
+
+    if(qtyBox){
+
+        qtyBox.innerText = item.qty;
+
+    }
+
+});
+
+
+// RESET ZERO FOR REMOVED ITEMS
+
+document.querySelectorAll(".quantity span").forEach(span=>{
+
+    if(!cart[span.id]){
+
+        span.innerText = 0;
+
+    }
+
+});
 // ===============================
 // OFFERS SYSTEM
 // ===============================
