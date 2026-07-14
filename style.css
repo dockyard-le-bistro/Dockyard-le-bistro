@@ -1216,3 +1216,201 @@ height:30px;
 }
 
 }
+/* ===============================
+   BEAUTIFUL CART DESIGN
+================================ */
+
+
+.cart-section{
+
+    background:linear-gradient(135deg,#fff7e6,#ffe0b2);
+
+    margin:30px 15px;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+
+}
+
+
+
+.cart-section h2{
+
+    text-align:center;
+
+    font-size:28px;
+
+    color:#8b4513;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+.cart-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    padding:15px;
+
+    margin:12px 0;
+
+    border-radius:18px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+
+    font-size:16px;
+
+}
+
+
+
+
+.cart-row b{
+
+    color:#d35400;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+.bill{
+
+    background:#fff;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    margin-top:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+
+.bill p{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:17px;
+
+}
+
+
+
+.bill h3{
+
+    background:#ff9800;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-size:22px;
+
+}
+
+
+
+
+
+.delivery-note{
+
+    background:#fff3cd;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    color:#7a5200;
+
+    text-align:center;
+
+}
+
+
+
+
+
+.cart-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+
+
+
+
+.cart-buttons button{
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:30px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    background:#e65100;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+
+
+.cart-buttons button:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+
+
+
+/* FREE OFFER ITEM */
+
+.cart-row:has(b:first-child){
+
+}
+
