@@ -554,13 +554,15 @@ function sendWhatsApp(){
 
 
 
-    if(subtotal < 200){
+    /*
+if(finalTotal < 200){
 
-        alert("A minimum order of ₹200 is required for deliveries beyond 500 metres.");
+    alert("A minimum order of ₹200 is required for deliveries beyond 500 metres.");
 
-        return;
+    return;
 
-    }
+}
+*/
 
 
 
@@ -647,13 +649,14 @@ function payNow(){
     }
 
 
-    if(finalTotal < 200){
+    /*
+if(finalTotal < 200){
 
-        alert("A minimum order of ₹200 is required for deliveries beyond 500 metres.");
-        return;
+    alert("A minimum order of ₹200 is required for deliveries beyond 500 metres.");
+    return;
 
-    }
-
+}
+*/
 
     let upiLink =
     "upi://pay?pa=" + UPI_ID +
