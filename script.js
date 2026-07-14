@@ -648,8 +648,7 @@ function payNow(){
 
     }
 
-
-    /*
+/*
 if(finalTotal < 200){
 
     alert("A minimum order of ₹200 is required for deliveries beyond 500 metres.");
@@ -657,19 +656,22 @@ if(finalTotal < 200){
 
 }
 */
+    let amount = Number(finalTotal).toFixed(2);
+
 
     let upiLink =
-    "upi://pay?pa=" + UPI_ID +
+    "upi://pay" +
+    "?pa=" + UPI_ID +
     "&pn=Dockyard%20Le%20Bistro" +
+    "&tr=DOCKYARD" + Date.now() +
     "&tn=Food%20Order" +
-    "&am=" + finalTotal +
+    "&am=" + amount +
     "&cu=INR";
 
 
     window.location.href = upiLink;
 
 }
-
 
 
 
