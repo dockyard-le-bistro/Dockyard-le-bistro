@@ -2,7 +2,7 @@ let cart = {};
 
 const UPI_ID = "Q051599316@ybl";
 
-const WHATSAPP_NUMBER = "91762645853";
+const WHATSAPP_NUMBER = "917626845853";
 
 
 
