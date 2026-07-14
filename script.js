@@ -291,7 +291,13 @@ function clearCart(){
 // ===============================
 // WHATSAPP ORDER
 // ===============================
+if(subtotal < 200){
 
+alert("A minimum order of ₹200 is required for deliveries beyond 500 metres.");
+
+return;
+
+}
 function sendWhatsApp(){
 
     if(Object.keys(cart).length === 0){
@@ -332,7 +338,13 @@ function sendWhatsApp(){
 // ===============================
 // PAYMENT
 // ===============================
+if(subtotal < 200){
 
+alert("A minimum order of ₹200 is required for deliveries beyond 500 metres.");
+
+return;
+
+}
 function payNow(){
 
 
