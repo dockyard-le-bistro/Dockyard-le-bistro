@@ -640,7 +640,7 @@ if(finalTotal < 200){
 // ===============================
 
 function payNow() {
-
+alert("Pay Now function is running");
     if (Object.keys(cart).length === 0) {
         alert("Please add items first.");
         return;
