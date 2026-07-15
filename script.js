@@ -639,39 +639,6 @@ if(finalTotal < 200){
 // UPI PAYMENT
 // ===============================
 
-function payNow(){
-
-    if(Object.keys(cart).length === 0){
-
-        alert("Please add items first.");
-        return;
-
-    }
-
-/*
-if(finalTotal < 200){
-
-    alert("A minimum order of ₹200 is required for deliveries beyond 500 metres.");
-    return;
-
-}
-*/
-    let amount = Number(finalTotal).toFixed(2);
-
-
-  let upiLink =
-    "upi://pay" +
-    "?pa=" + encodeURIComponent(UPI_ID) +
-    "&pn=" + encodeURIComponent("Sandeep Singh") +
-    "&tr=DOCKYARD" + Date.now() +
-    "&tn=" + encodeURIComponent("Dockyard Le Bistro Food Order") +
-    "&am=" + amount +
-    "&cu=INR";
-
-
-    window.location.href = upiLink;
-
-}
 
 
 
@@ -684,7 +651,33 @@ function goToCart(){
 
 
     if(cartSection){
+function payNow() {
 
+    if (Object.keys(cart).length === 0) {
+        alert("Please add items first.");
+        return;
+    }
+
+    /*
+    if(finalTotal < 200){
+        alert("A minimum order of ₹200 is required for deliveries beyond 500 metres.");
+        return;
+    }
+    */
+
+    let amount = Number(finalTotal).toFixed(2);
+
+    const upiLink =
+        "upi://pay" +
+        "?pa=" + encodeURIComponent(UPI_ID) +
+        "&pn=" + encodeURIComponent("Sandeep Singh") +
+        "&tr=DOCKYARD" + Date.now() +
+        "&tn=" + encodeURIComponent("Dockyard Le Bistro Food Order") +
+        "&am=" + amount +
+        "&cu=INR";
+
+    window.open(upiLink, "_blank");
+}
 
         cartSection.scrollIntoView({
 
