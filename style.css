@@ -1414,3 +1414,71 @@ height:30px;
 
 }
 
+.floating-cart-box{
+
+    position:fixed;
+    right:20px;
+    bottom:20px;
+
+    width:330px;
+    max-height:70vh;
+    overflow-y:auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+
+    z-index:9999;
+
+}
+
+
+.cart-header{
+
+    background:#ffcc00;
+
+    padding:12px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:800;
+
+}
+
+
+.cart-total{
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    margin:15px 0;
+
+}
+
+
+.floating-cart-box button{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
