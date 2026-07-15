@@ -5,7 +5,7 @@
 // =================================
 
 
-const UPI_ID = "q051599316@ybl";
+const UPI_ID = "Q051599316@ybl";
 const PHONE = "917626845853";
 
 let cart = {};
