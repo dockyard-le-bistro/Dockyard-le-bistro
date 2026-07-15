@@ -139,7 +139,15 @@ function updateCart(){
         count.innerText = totalItems;
 
     }
+// Floating Cart Total
 
+let floatingTotal = document.getElementById("floatingTotal");
+
+if(floatingTotal){
+
+    floatingTotal.innerText = finalTotal;
+
+}
 
 
     updateMenuQuantity();
