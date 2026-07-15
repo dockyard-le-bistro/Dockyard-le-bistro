@@ -517,63 +517,22 @@ function renderCart(){
 // ===============================
 // CLEAR CART
 // ===============================
-
 function clearCart(){
-
 
     cart = {};
 
-
     subtotal = 0;
-
     discount = 0;
-
     finalTotal = 0;
-
     totalItems = 0;
 
-
-let floatingTotal = document.getElementById("floatingTotal");
-
-if(floatingTotal){
-    floatingTotal.innerText = 0;
-}
-    function updateCart(){
-
-    subtotal = 0;
-    totalItems = 0;
-
-    Object.values(cart).forEach(item=>{
-
-        subtotal += item.price * item.qty;
-        totalItems += item.qty;
-
-    });
-
-    applyOffers();
-
-    // Floating Cart Count
-    let count = document.getElementById("cartCount");
-
-    if(count){
-        count.innerText = totalItems;
-    }
-
-    // Floating Cart Total
-    let floatingTotal = document.getElementById("floatingTotal");
-
-    if(floatingTotal){
-        floatingTotal.innerText = finalTotal;
-    }
-
-    updateMenuQuantity();
-
-    renderCart();
+    updateCart();
 
 }
 
+   
+ 
 
-}
 // ===============================
 // WHATSAPP ORDER
 // ===============================
