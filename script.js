@@ -655,7 +655,7 @@ alert("Pay Now function is running");
         "&tr=DOCK" + Date.now() +
         "&am=" + amount +
         "&cu=INR";
-
+console.log(upiLink);
     window.location.href = upiLink;
 }
 
