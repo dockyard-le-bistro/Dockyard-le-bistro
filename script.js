@@ -659,12 +659,12 @@ if(finalTotal < 200){
     let amount = Number(finalTotal).toFixed(2);
 
 
-    let upiLink =
+  let upiLink =
     "upi://pay" +
-    "?pa=" + UPI_ID +
-    "&pn=Dockyard%20Le%20Bistro" +
+    "?pa=" + encodeURIComponent(UPI_ID) +
+    "&pn=" + encodeURIComponent("Sandeep Singh") +
     "&tr=DOCKYARD" + Date.now() +
-    "&tn=Food%20Order" +
+    "&tn=" + encodeURIComponent("Dockyard Le Bistro Food Order") +
     "&am=" + amount +
     "&cu=INR";
 
