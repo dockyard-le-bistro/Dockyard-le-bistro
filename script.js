@@ -834,3 +834,18 @@ function toggleCart(){
     }
 
 }
+function searchFood() {
+    console.log("Search function running");
+
+    let input = document.getElementById("search").value.toLowerCase();
+
+    document.querySelectorAll(".menu-card").forEach(card => {
+        let text = card.textContent.toLowerCase();
+
+        if (text.includes(input)) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
