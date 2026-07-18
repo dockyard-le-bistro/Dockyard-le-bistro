@@ -819,3 +819,20 @@ window.onload=function(){
 
 
 console.log("Dockyard Le Bistro Final Script Loaded");
+// ===============================
+// TOGGLE FLOATING CART
+// ===============================
+
+function toggleCart(){
+
+    const cart = document.getElementById("floatingCart");
+
+    if(!cart) return;
+
+    if(cart.classList.contains("open")){
+        cart.classList.remove("open");
+    }else{
+        cart.classList.add("open");
+    }
+
+}
