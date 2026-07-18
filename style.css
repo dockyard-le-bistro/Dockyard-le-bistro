@@ -1616,3 +1616,8 @@ height:30px;
     z-index:99999 !important;
 
 }
+.floating-cart-box.open{
+
+    display:block;
+
+}
