@@ -1621,3 +1621,23 @@ height:30px;
     display:block;
 
 }
+/* FINAL CART FIX */
+
+#floatingCart{
+    display:none;
+    position:fixed;
+    right:20px;
+    top:100px;
+    width:340px;
+    max-height:75vh;
+    overflow-y:auto;
+    background:white;
+    padding:20px;
+    border-radius:25px;
+    z-index:999999;
+    box-shadow:0 10px 35px rgba(0,0,0,.3);
+}
+
+#floatingCart.open{
+    display:block !important;
+}
