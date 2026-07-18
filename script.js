@@ -570,9 +570,16 @@ if(finalTotal < 200){
 
 
 
-    let message =
-    "🍽️ Dockyard Le Bistro Order\n\n";
+    
+let customerName = document.getElementById("customerName").value.trim();
+let customerPhone = document.getElementById("customerPhone").value.trim();
+let customerAddress = document.getElementById("customerAddress").value.trim();
 
+let message =
+"🍽️ Dockyard Le Bistro Order\n\n" +
+"👤 Name: " + customerName + "\n" +
+"📞 Phone: " + customerPhone + "\n" +
+"🏠 Address: " + customerAddress + "\n\n";
 
 
     Object.values(cart).forEach(item=>{
