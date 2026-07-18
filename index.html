@@ -4631,230 +4631,90 @@ ADD
     
 
   
-<!-- ================= CUSTOMER DETAILS ================= -->
+<!-- ================= FLOATING CART BUTTON ================= -->
 
-
-<section cl<!-- FLOATING CART BUTTON -->
 <div class="floating-cart" onclick="toggleCart()">
-
     <div class="floating-cart-icon">
         🛒
         <span id="cartCount">0</span>
     </div>
-
 </div>
 
-<!-- FLOATING CART -->
+<!-- ================= FLOATING CART ================= -->
+
 <div id="floatingCart" class="floating-cart-box">
-
-
-
-<h2>📲 ORDER DETAILS</h2>
-
-
-</div>
-    <input
-type="text"
-id="customerName"
-placeholder="Enter Your Name">
-
-
-<input
-type="tel"
-id="customerPhone"
-placeholder="Enter Phone Number">
-
-
-
-<textarea
-id="customerAddress"
-placeholder="Delivery Address"></textarea>
-
-
-
-<button 
-class="whatsapp-btn"
-onclick="sendWhatsApp()">
-
-ORDER ON WHATSAPP
-
-</button>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ================= FLOATING CART ================= --!>
-
-
-
-<div id="cartItems">
-
-
-</div>
-
-
-
-<hr>
-
-
-
-<p>
-Subtotal:
-₹<span id="subtotal">
-0
-</span>
-</p>
-
-
-
-<p class="offer-text">
-
-🎁 Offer Discount:
-₹<span id="discount">
-0
-</span>
-
-</p>
-
-
-
-
-<p>
-
-Delivery:
-₹<span id="deliveryCharge">
-0
-</span>
-
-</p>
-
-
-
-
-<h3>
-
-Total Payable:
-₹<span id="total">
-0
-</span>
-
-</h3>
-<p class="delivery-note">
-🚚 A minimum order of ₹200 is required for deliveries beyond 500 metres.
-</p>
-
-
-<button
-class="pay-btn"
-onclick="payNow()">
-
-💳 PAY NOW
-
-</button>
-
-
-
-<button
-class="whatsapp-btn"
-onclick="sendWhatsApp()">
-
-🟢 ORDER ON WHATSAPP
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-
-<!-- ================= CALL BUTTONS ================= -->
-
-
-<div class="call-section">
-
-
-<h3>
-📞 Call Us
-</h3>
-
-
-<a href="tel:7626845853">
-
-7626845853
-
-</a>
-
-
-<br>
-
-
-<a href="tel:9646225661">
-
-9646225661
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<!-- ================= FOOTER ================= -->
-
-<div id="floatingCart" class="floating-cart-box" style="display:none;">
 
     <div class="cart-header">
         🛒 YOUR CART
+        <span class="close-cart" onclick="toggleCart()">✖</span>
     </div>
 
     <div id="cartItems">
         Your cart is empty
     </div>
 
-    <div class="cart-total">
-        Total: ₹<span id="grandTotal">0</span>
-    </div>
+    <hr>
 
-    <button onclick="sendWhatsApp()">
-        ORDER ON WHATSAPP
+    <p>Subtotal : ₹ <span id="subTotal">0</span></p>
+
+    <p>🎁 Offer Discount : ₹ <span id="discount">0</span></p>
+
+    <p>Delivery : ₹ <span id="deliveryCharge">0</span></p>
+
+    <h3>Total Payable : ₹ <span id="grandTotal">0</span></h3>
+
+    <p class="delivery-note">
+        🚚 A minimum order of ₹200 is required for deliveries beyond 500 metres.
+    </p>
+
+    <input
+        type="text"
+        id="customerName"
+        placeholder="Enter Your Name">
+
+    <input
+        type="tel"
+        id="customerPhone"
+        placeholder="Enter Phone Number">
+
+    <textarea
+        id="customerAddress"
+        placeholder="Delivery Address"></textarea>
+
+    <button class="pay-btn" onclick="payNow()">
+        💳 PAY NOW
     </button>
 
-    <button onclick="payNow()">
-        PAY NOW
+    <button class="whatsapp-btn" onclick="sendWhatsApp()">
+        🟢 ORDER ON WHATSAPP
     </button>
 
 </div>
+
+<!-- ================= CALL SECTION ================= -->
+
+<div class="call-section">
+
+    <h3>📞 Call Us</h3>
+
+    <a href="tel:7626845853">7626845853</a>
+
+    <br>
+
+    <a href="tel:9646225661">9646225661</a>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
+    <p>Pure Vegetarian 🌱</p>
 
-<p>
-Pure Vegetarian 🌱
-</p>
+    <p>© Dockyard Le Bistro</p>
 
-
-<p>
-© Dockyard Le Bistro
-</p>
-
-
-<h3>
-Deliciousness is just a click away
-</h3>
-
+    <h3>Deliciousness is just a click away</h3>
 
 </footer>
+
 <script src="script.js"></script>
