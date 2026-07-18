@@ -1697,3 +1697,48 @@ height:30px;
     font-weight:bold;
     cursor:pointer;
 }
+.category-card{
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    color:white;
+    font-weight:700;
+    box-shadow:0 5px 15px rgba(0,0,0,0.25);
+    transition:0.3s;
+}
+
+.category-card:hover{
+    transform:scale(1.05);
+}
+
+
+/* Different colours */
+
+.kulcha{
+    background:linear-gradient(135deg,#ff512f,#dd2476);
+}
+
+.prantha{
+    background:linear-gradient(135deg,#f7971e,#ffd200);
+    color:#222;
+}
+
+.fries{
+    background:linear-gradient(135deg,#8360c3,#2ebf91);
+}
+
+.shakes{
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+}
+
+.pizza{
+    background:linear-gradient(135deg,#ff416c,#ff4b2b);
+}
+
+.pasta{
+    background:linear-gradient(135deg,#11998e,#38ef7d);
+}
+
+.momos{
+    background:linear-gradient(135deg,#8e2de2,#4a00e0);
+}
