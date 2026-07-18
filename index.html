@@ -1747,37 +1747,29 @@ ADD
 
 
 <div class="menu-card">
-    <img src="images/vegsupreme.jpg" alt="Veg Supreme Pizza">
+
+    <img src="images/vegsupreme.jpg" alt="Veg Supreme Pizza" class="food-img">
+
     <div class="item-info">
         <h3>Veg Supreme Pizza</h3>
         <p>₹150</p>
     </div>
-    <button onclick="addItem('Veg Supreme Pizza',150)">
 
+    <button class="add-btn" onclick="addItem('Veg Supreme Pizza',150)">
+        ADD
+    </button>
 
-<div class="quantity">
+    <div class="quantity">
+        <button onclick="decreaseQty('Veg Supreme Pizza')">−</button>
 
-<button onclick="decreaseQty('Veg Supreme Pizza')">
-−
-</button>
+        <span id="qty-Veg Supreme Pizza">0</span>
 
-<span id="Veg Supreme Pizza">
-0
-</span>
-
-<button onclick="increaseQty('Veg Supreme Pizza',150)">
-+
-</button>
+        <button onclick="increaseQty('Veg Supreme Pizza',150)">+</button>
+    </div>
 
 </div>
 
 
-<button class="add-btn"
-onclick="increaseQty('Veg Supreme Pizza',150)">
-ADD
-</button>
-
-</div>
 
 
 
