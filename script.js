@@ -836,3 +836,8 @@ function toggleCart(){
     }
 
 }
+function toggleCart(){
+
+    document.getElementById("floatingCart").classList.toggle("open");
+
+}
