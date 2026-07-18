@@ -1641,3 +1641,59 @@ height:30px;
 #floatingCart.open{
     display:block !important;
 }
+
+.menu-card{
+    width:220px;
+    background:#fff;
+    border-radius:15px;
+    padding:12px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    margin:15px;
+}
+
+.food-img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.menu-card h3{
+    margin:10px 0 5px;
+}
+
+.menu-card p{
+    font-weight:bold;
+    color:#e53935;
+}
+
+.qty-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin:10px 0;
+}
+
+.qty-box button{
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:50%;
+    background:#ff9800;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.add-btn{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    background:#28a745;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
