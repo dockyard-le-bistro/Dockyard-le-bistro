@@ -824,10 +824,13 @@ console.log("Dockyard Le Bistro Final Script Loaded");
 // ===============================
 function toggleCart(){
 
-    alert("Cart button clicked");
-
     let cart = document.getElementById("floatingCart");
 
-    cart.style.display = "block";
+    if(cart.classList.contains("open")){
+        cart.classList.remove("open");
+    }
+    else{
+        cart.classList.add("open");
+    }
 
 }
