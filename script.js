@@ -835,17 +835,33 @@ function toggleCart(){
 
 }
 function searchFood() {
-    console.log("Search function running");
 
-    let input = document.getElementById("search").value.toLowerCase();
+    let input = document.getElementById("search").value.toLowerCase().trim();
 
-    document.querySelectorAll(".menu-card").forEach(card => {
-        let text = card.textContent.toLowerCase();
+    document.querySelectorAll(".category-section").forEach(section => {
 
-        if (text.includes(input)) {
-            card.style.display = "";
+        let found = false;
+
+        section.querySelectorAll(".menu-card").forEach(card => {
+
+            let text = card.textContent.toLowerCase();
+
+            if (text.includes(input)) {
+                card.style.display = "";
+                found = true;
+            } else {
+                card.style.display = "none";
+            }
+
+        });
+
+        // Agar search box empty hai to sab categories dikhao
+        if (input === "") {
+            section.style.display = "block";
         } else {
-            card.style.display = "none";
+            section.style.display = found ? "block" : "none";
         }
+
     });
+
 }
