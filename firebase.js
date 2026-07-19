@@ -27,6 +27,7 @@ koi
     await push(ref(db, "orders"), orderData);
     console.log("Order Saved Successfully");
     alert("Firebase me save ho gaya");
+    alert(typeof saveOrder);
   } catch (error) {
     console.error("Firebase Error:", error);
   }
