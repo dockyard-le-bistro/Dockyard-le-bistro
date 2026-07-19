@@ -1909,3 +1909,32 @@ height:30px;
 .category-card::first-letter{
     font-size:70px;
 }
+/* MORE CATEGORY COLORS */
+
+.burger{
+    background:linear-gradient(135deg,#ff9966,#ff5e62);
+}
+
+.roll{
+    background:linear-gradient(135deg,#56ab2f,#a8e063);
+}
+
+.chinese{
+    background:linear-gradient(135deg,#f12711,#f5af19);
+}
+
+.tikka{
+    background:linear-gradient(135deg,#614385,#516395);
+}
+
+.maincourse{
+    background:linear-gradient(135deg,#ee0979,#ff6a00);
+}
+
+.mealbox{
+    background:linear-gradient(135deg,#1d976c,#93f9b9);
+}
+
+.sandwich{
+    background:linear-gradient(135deg,#fc4a1a,#f7b733);
+}
