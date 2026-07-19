@@ -901,17 +901,14 @@ function openUPI(){
         return;
     }
 
-
-    let upiID = UPI_ID;
+    let upiID = "q051599316@ybl";
     let name = "Sandeep Singh";
 
-
-    let link = 
+    let link =
     "upi://pay?pa=" + upiID +
-    "&pn=" + encodeURIComponent("Sandeep Singh") +
+    "&pn=" + encodeURIComponent(name) +
     "&am=" + finalTotal.toFixed(2) +
     "&cu=INR";
-
 
     window.location.href = link;
 
