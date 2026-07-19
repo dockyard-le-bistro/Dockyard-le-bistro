@@ -661,7 +661,7 @@ function payNow(){
 
     let upiLink =
     "upi://pay?pa=" + UPI_ID +
-    "&pn=Sandeep%20Singh" +
+    "&pn=Sandeep" +
     "&am=" + amount +
     "&cu=INR";
 
