@@ -38,7 +38,29 @@ Login
 
 
 <script type="module">
-...
+...const OWNER_PASSWORD = "Sunny@167";
+
+
+window.ownerLogin = function(){
+
+    let pass = document.getElementById("ownerPassword").value;
+
+
+    if(pass === OWNER_PASSWORD){
+
+        document.getElementById("loginBox").style.display="none";
+
+        document.getElementById("ownerPanel").style.display="block";
+
+    }
+    else{
+
+        document.getElementById("loginError").innerText =
+        "Wrong Password";
+
+    }
+
+}
 </script>
 
 
