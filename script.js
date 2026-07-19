@@ -872,7 +872,7 @@ function searchFood() {
 }
 function startUPIPayment(){
 
-    let upiID = "q051599316@ybl;
+    let upiID = "q051599316@ybl";
     let receiverName = "Sandeep Singh";
 
     let upiURL = 
