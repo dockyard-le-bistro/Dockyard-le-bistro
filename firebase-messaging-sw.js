@@ -17,6 +17,7 @@ firebase.initializeApp({
 const messaging = firebase.messaging();
 
 messaging.onBackgroundMessage((payload) => {
+alert("🔔 New Order Received!");
 
   self.registration.showNotification("🍽️ Dockyard Le Bistro", {
     body: "📦 New order received!",
