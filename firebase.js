@@ -20,8 +20,7 @@ window.saveOrder = async function(orderData) {
   try {
     
     await push(ref(db, "orders"), orderData);
-alert("Push chal gaya");
-alert("DATA FIREBASE ME SAVE HO GYA");
+
 
 console.log("Order Saved Successfully");
     
