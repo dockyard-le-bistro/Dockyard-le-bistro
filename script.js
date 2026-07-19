@@ -886,7 +886,7 @@ function startUPIPayment(){
 }
 function openUPI(){
 
-    let upiID = "YOUR_UPI_ID"; 
+    let upiID = "q051599316@ybl"; 
     let name = "Sandeep Singh";
 
     let link = "upi://pay?pa=" + upiID +
