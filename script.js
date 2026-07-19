@@ -656,16 +656,21 @@ function payNow(){
         return;
     }
 
-    document.getElementById("paymentPopup").style.display = "flex";
+    document.getElementById("paymentPopup").style.display="flex";
+
+
+    let upiLink =
+    "upi://pay?pa=q051599316@ybl" +
+    "&pn=Sandeep%20Singh" +
+    "&am=" + finalTotal.toFixed(2) +
+    "&cu=INR";
+
+
+    document.getElementById("paymentQR").src =
+    "https://api.qrserver.com/v1/create-qr-code/?size=250x250&data="
+    + encodeURIComponent(upiLink);
 
 }
-
-function closePayment(){
-
-    document.getElementById("paymentPopup").style.display = "none";
-
-}
-
 
 
 // ===============================
