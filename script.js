@@ -15,7 +15,21 @@ let discount = 0;
 let finalTotal = 0;
 let totalItems = 0;
 
+// ===============================
+// FIREBASE SAVE ORDER
+// ===============================
 
+function saveOrder(order){
+
+    firebase.database().ref("orders").push(order)
+    .then(()=>{
+        console.log("Order Saved");
+    })
+    .catch((error)=>{
+        console.log("Firebase Error:", error);
+    });
+
+}
 // ===============================
 // ADD ITEM
 // ===============================
