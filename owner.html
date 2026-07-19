@@ -5,84 +5,41 @@
 <title>Dockyard Le Bistro - Owner Orders</title>
 
 <style>
-<h1>OWNER PAGE TEST</h1>
-    
+
 body{
-    <body>
-
-<div id="loginBox">
-
-<h2>🔒 Owner Login</h2>
-
-<input 
-type="password" 
-id="ownerPassword" 
-placeholder="Enter Password">
-
-<button onclick="ownerLogin()">
-Login
-</button>
-
-<p id="loginError"></p>
-
-</div>
-
-
-<div id="ownerPanel" style="display:none;">
-
-<h1>🍽️ Dockyard Le Bistro Orders</h1>
-
-<!-- yahan aapka pura orders wala code rahega -->
-
-</div>
-
-
-<script type="module">
-...const OWNER_PASSWORD = "Sunny@167";
-
-
-window.ownerLogin = function(){
-
-    let pass = document.getElementById("ownerPassword").value;
-
-
-    if(pass === OWNER_PASSWORD){
-
-        document.getElementById("loginBox").style.display="none";
-
-        document.getElementById("ownerPanel").style.display="block";
-
-    }
-    else{
-
-        document.getElementById("loginError").innerText =
-        "Wrong Password";
-
-    }
-
-}
-</script>
-
-
     font-family:Arial;
     background:#fff8e1;
     padding:20px;
 }
+
 
 h1{
     text-align:center;
     color:#d32f2f;
 }
 
-.order-card{
+
+#loginBox{
 
     background:white;
-    padding:15px;
-    margin:15px 0;
-    border-radius:12px;
+    max-width:350px;
+    margin:50px auto;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
     box-shadow:0 3px 10px #ccc;
 
 }
+
+
+#loginBox input{
+
+    width:90%;
+    padding:10px;
+    margin:10px;
+
+}
+
 
 button{
 
@@ -94,19 +51,39 @@ button{
 
 }
 
+
+.order-card{
+
+    background:white;
+    padding:15px;
+    margin:15px 0;
+    border-radius:12px;
+    box-shadow:0 3px 10px #ccc;
+
+}
+
+
 .paid{
+
     background:green;
     color:white;
+
 }
+
 
 .delete{
+
     background:red;
     color:white;
+
 }
 
+
 .call{
+
     background:#2196f3;
     color:white;
+
 }
 
 
@@ -118,12 +95,48 @@ button{
 <body>
 
 
-<h1>🍽️ Dockyard Le Bistro Orders</h1>
+<div id="loginBox">
+
+<h2>🔒 Owner Login</h2>
+
+
+<input 
+type="password"
+id="ownerPassword"
+placeholder="Enter Password">
+
+
+<button onclick="ownerLogin()">
+Login
+</button>
+
+
+<p id="loginError"></p>
+
+
+</div>
+
+
+
+
+<div id="ownerPanel" style="display:none;">
+
+
+<h1>
+🍽️ Dockyard Le Bistro Orders
+</h1>
 
 
 <div id="orders">
+
 Loading Orders...
+
 </div>
+
+
+</div>
+
+
 
 
 
@@ -142,6 +155,42 @@ update,
 remove
 }
 from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+
+
+const OWNER_PASSWORD = "Sunny@167";
+
+
+
+window.ownerLogin=function(){
+
+
+let pass=document.getElementById("ownerPassword").value;
+
+
+if(pass===OWNER_PASSWORD){
+
+
+document.getElementById("loginBox").style.display="none";
+
+
+document.getElementById("ownerPanel").style.display="block";
+
+
+}
+
+else{
+
+
+document.getElementById("loginError").innerText="Wrong Password";
+
+
+}
+
+
+};
+
+
 
 
 
@@ -167,11 +216,14 @@ appId: "1:991617661975:web:9d69822a65b19fe31a3052"
 
 const app = initializeApp(firebaseConfig);
 
+
 const db = getDatabase(app);
 
 
 
-const ordersDiv = document.getElementById("orders");
+const ordersDiv=document.getElementById("orders");
+
+
 
 
 
@@ -181,7 +233,8 @@ onValue(ref(db,"orders"),(snapshot)=>{
 ordersDiv.innerHTML="";
 
 
-let data = snapshot.val();
+let data=snapshot.val();
+
 
 
 if(!data){
@@ -205,7 +258,9 @@ let items="";
 
 order.items.forEach(item=>{
 
+
 items += item.name+" x "+item.qty+"<br>";
+
 
 });
 
@@ -222,9 +277,7 @@ ordersDiv.innerHTML += `
 
 <b>Name:</b> ${order.customerName}<br>
 
-<b>Phone:</b> ${order.customerPhone}
-
-<br>
+<b>Phone:</b> ${order.customerPhone}<br>
 
 <b>Address:</b> ${order.customerAddress}
 
@@ -238,18 +291,19 @@ ${items}
 
 <br>
 
+
 <b>Total:</b> ₹${order.total}
 
-
 <br>
+
 
 <b>Status:</b> ${order.paymentStatus}
 
 
 <br>
 
-<b>Time:</b> ${order.orderTime}
 
+<b>Time:</b> ${order.orderTime}
 
 
 <br><br>
@@ -280,18 +334,17 @@ ${items}
 </button>
 
 
-
 </div>
 
 
 `;
 
 
-
 });
 
 
 });
+
 
 
 
@@ -307,7 +360,9 @@ paymentStatus:"Paid"
 });
 
 
-}
+};
+
+
 
 
 
@@ -317,12 +372,14 @@ window.deleteOrder=function(id){
 
 if(confirm("Delete this order?")){
 
+
 remove(ref(db,"orders/"+id));
 
+
 }
 
 
-}
+};
 
 
 
