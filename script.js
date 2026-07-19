@@ -626,7 +626,7 @@ let message =
     message +=
     "\nFinal Total : ₹" + finalTotal;
 
-
+message += "\n\n💳 Payment Status: I have already paid ✅";
 
     window.open(
 
