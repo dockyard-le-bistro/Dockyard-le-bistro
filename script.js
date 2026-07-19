@@ -914,3 +914,19 @@ function payUPI(){
     window.location.href = upiLink;
 
 }
+function openUPIApp(){
+
+    let amount = finalTotal.toFixed(2);
+
+    let upiLink =
+    "upi://pay" +
+    "?pa=q051599316@ybl" +
+    "&pn=Dockyard%20Le%20Bistro" +
+    "&tn=Food%20Order" +
+    "&am=" + amount +
+    "&cu=INR";
+
+
+    window.location.href = upiLink;
+
+}
