@@ -160,7 +160,13 @@ from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
 const OWNER_PASSWORD = "Sunny@167";
 
+// Check saved owner login
+if(localStorage.getItem("ownerLoggedIn") === "true"){
 
+document.getElementById("loginBox").style.display="none";
+document.getElementById("ownerPanel").style.display="block";
+
+}
 
 window.ownerLogin=function(){
 
