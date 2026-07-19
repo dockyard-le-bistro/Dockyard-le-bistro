@@ -655,27 +655,29 @@ function payNow(){
         return;
     }
 
-
     let amount = finalTotal.toFixed(2);
 
-
     let upiLink =
-    "upi://pay?pa=" + UPI_ID +
-    "&pn=Sandeep" +
+    "upi://pay" +
+    "?pa=" + UPI_ID +
+    "&pn=Dockyard%20Le%20Bistro" +
+    "&tn=Food%20Order" +
     "&am=" + amount +
     "&cu=INR";
 
 
-    // QR show
+    // Show QR Popup
     document.getElementById("paymentPopup").style.display="flex";
 
+
+    // QR Generate
     document.getElementById("paymentQR").src =
     "https://api.qrserver.com/v1/create-qr-code/?size=250x250&data="
     + encodeURIComponent(upiLink);
 
 
-    // Open UPI app
-    window.location.href = upiLink;
+    // Save link for button
+    window.currentUPILink = upiLink;
 
 }
 
