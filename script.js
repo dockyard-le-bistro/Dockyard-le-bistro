@@ -626,7 +626,7 @@ let message =
     message +=
     "\nFinal Total : ₹" + finalTotal;
 
-message += "\n\n💳 Payment Status: I have already paid ✅";
+message += "\n\n💳 Payment Status: Pending";
 // Save Order to Firebase
 saveOrder({
     customerName: customerName,
