@@ -626,7 +626,9 @@ let message =
     message +=
     "\nFinal Total : ₹" + finalTotal;
 
-message += "\n\n💳 Payment Status: Pending";
+message +=
+"\n\n💳 Payment Status: Pending ⏳" +
+"\nOwner will confirm payment after order.";
 // Save Order to Firebase
 saveOrder({
     customerName: customerName,
@@ -636,7 +638,7 @@ saveOrder({
     subtotal: subtotal,
     discount: discount,
     total: finalTotal,
-    paymentStatus: "Paid",
+    paymentStatus: "Pending",
     orderTime: new Date().toISOString()
 });
     window.open(
