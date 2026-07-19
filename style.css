@@ -2100,3 +2100,21 @@ background:linear-gradient(135deg,#834d9b,#d04ed6) !important;
     width:100%;
     margin-top:10px;
 }
+#loginBox{
+
+text-align:center;
+background:white;
+padding:20px;
+border-radius:15px;
+max-width:350px;
+margin:50px auto;
+
+}
+
+#loginBox input{
+
+padding:10px;
+width:90%;
+margin:10px;
+
+}
