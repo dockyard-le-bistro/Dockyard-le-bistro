@@ -650,7 +650,7 @@ let message =
 // ===============================
 
 function payNow() {
-alert("Pay Now function is running");
+
     if (Object.keys(cart).length === 0) {
         alert("Please add items first.");
         return;
@@ -659,15 +659,11 @@ alert("Pay Now function is running");
     let amount = Number(finalTotal).toFixed(2);
 
     const upiLink =
-        "upi://pay?pa=" + encodeURIComponent(UPI_ID) +
-        "&pn=" + encodeURIComponent("Sandeep Singh") +
-        "&tn=" + encodeURIComponent("Dockyard Le Bistro Food Order") +
-        "&tr=DOCK" + Date.now() +
-        "&am=" + amount +
-        "&cu=INR";
-console.log(upiLink);
+        `upi://pay?pa=Q051599316@ybl&pn=PhonePeMerchant&mc=0000&mode=02&purpose=00&am=${amount}&cu=INR`;
+
     window.location.href = upiLink;
 }
+
 
 
 // ===============================
