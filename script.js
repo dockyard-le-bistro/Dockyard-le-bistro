@@ -884,4 +884,16 @@ function startUPIPayment(){
     window.location.href = upiURL;
 
 }
+function openUPI(){
 
+    let upiID = "YOUR_UPI_ID"; 
+    let name = "Sandeep Singh";
+
+    let link = "upi://pay?pa=" + upiID +
+               "&pn=" + name +
+               "&am=" + finalTotal +
+               "&cu=INR";
+
+    window.location.href = link;
+
+}
