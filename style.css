@@ -683,19 +683,45 @@ header p{
 
 .category-card{
 
-    height:150px;
+    height:170px;
+
+    padding:20px;
+
     border-radius:25px;
+
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
+
     text-align:center;
+
     color:white;
+    font-weight:700;
     font-size:22px;
-    font-weight:bold;
-    cursor:pointer;
-    background:linear-gradient(135deg,#ff512f,#dd2476);
-    box-shadow:0 6px 15px rgba(0,0,0,0.2);
-    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+
+    transition:0.3s;
+
+}
+
+
+.category-card:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+.category-card img{
+
+    width:90px;
+    height:90px;
+
+    object-fit:contain;
+
+    margin-bottom:10px;
 
 }
 
