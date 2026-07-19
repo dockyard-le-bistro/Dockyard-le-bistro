@@ -18,10 +18,13 @@ const db = getDatabase(app);
 // Save Order Function
 window.saveOrder = async function(orderData) {
   try {
-    await push(ref(db, "orders"), orderData);
-koi
     
-    console.log("Order Saved Successfully");
+    await push(ref(db, "orders"), orderData);
+
+alert("DATA FIREBASE ME SAVE HO GYA");
+
+console.log("Order Saved Successfully");
+    
     window.saveOrder = async function(orderData) {
   try {
     await push(ref(db, "orders"), orderData);
