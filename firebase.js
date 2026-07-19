@@ -16,3 +16,10 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+const db = getDatabase(app);
+
+window.saveOrder = function(orderData) {
+    push(ref(db, "orders"), orderData);
+}
