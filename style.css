@@ -1937,3 +1937,64 @@ height:30px;
 .sandwich{
     background:linear-gradient(135deg,#fc4a1a,#f7b733);
 }
+/* ALL CATEGORY COLORS FIX */
+
+.kulcha{
+background:linear-gradient(135deg,#ff512f,#dd2476) !important;
+}
+
+.parantha{
+background:linear-gradient(135deg,#f7971e,#ffd200) !important;
+}
+
+.fries{
+background:linear-gradient(135deg,#8360c3,#2ebf91) !important;
+}
+
+.shake{
+background:linear-gradient(135deg,#00c6ff,#0072ff) !important;
+}
+
+.pizza{
+background:linear-gradient(135deg,#ff416c,#ff4b2b) !important;
+}
+
+.pasta{
+background:linear-gradient(135deg,#11998e,#38ef7d) !important;
+}
+
+.momos{
+background:linear-gradient(135deg,#8e2de2,#4a00e0) !important;
+}
+
+.roll{
+background:linear-gradient(135deg,#56ab2f,#a8e063) !important;
+}
+
+.burger{
+background:linear-gradient(135deg,#ff9966,#ff5e62) !important;
+}
+
+.crispy{
+background:linear-gradient(135deg,#f12711,#f5af19) !important;
+}
+
+.tikka{
+background:linear-gradient(135deg,#614385,#516395) !important;
+}
+
+.chinese{
+background:linear-gradient(135deg,#ee0979,#ff6a00) !important;
+}
+
+.main{
+background:linear-gradient(135deg,#1d976c,#93f9b9) !important;
+}
+
+.meal{
+background:linear-gradient(135deg,#fc4a1a,#f7b733) !important;
+}
+
+.street{
+background:linear-gradient(135deg,#667eea,#764ba2) !important;
+}
