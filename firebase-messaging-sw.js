@@ -1,6 +1,10 @@
 importScripts("https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js");
 importScripts("https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging-compat.js");
-
+import {
+ getMessaging,
+ getToken,
+ onMessage
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js";
 firebase.initializeApp({
   apiKey: "AIzaSyAuaFGwNjJtV0mcXZ7Tw734R0Q4HzChs1k",
   authDomain: "dockyard-le-bistro.firebaseapp.com",
