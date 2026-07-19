@@ -223,7 +223,7 @@ const db = getDatabase(app);
 
 const ordersDiv=document.getElementById("orders");
 
-
+let ordersData = {};
 
 
 
@@ -235,7 +235,7 @@ ordersDiv.innerHTML="";
 
 let data=snapshot.val();
 
-
+ordersData = data;
 
 if(!data){
 
@@ -383,7 +383,37 @@ remove(ref(db,"orders/"+id));
 
 };
 
+window.sendPayment=function(id){
 
+let order = ordersData[id];
+
+
+let message =
+"🍽️ Dockyard Le Bistro\n\n" +
+"Hello " + order.customerName + ",\n\n" +
+
+"💳 To proceed with your payment, please click on the payment amount below and complete your payment.\n\n" +
+
+"Once the payment is completed, kindly share the payment screenshot with us for order confirmation.\n\n" +
+
+"💰 Amount: ₹" + order.total +
+
+"\n\nThank you for choosing Dockyard Le Bistro 🌱";
+
+
+
+let url =
+"https://wa.me/" +
+order.customerPhone +
+"?text=" +
+encodeURIComponent(message);
+
+
+
+window.open(url,"_blank");
+
+
+};
 
 </script>
 
