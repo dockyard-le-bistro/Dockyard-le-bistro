@@ -636,7 +636,7 @@ message +=
 "\nOwner will confirm payment after order.";
 
    alert("Order save karne ja raha hai"); 
-// Save Order to Firebase
+    alert(typeof window.saveOrder);
 saveOrder({
     customerName: customerName,
     customerPhone: customerPhone,
