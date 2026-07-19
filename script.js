@@ -634,6 +634,8 @@ let message =
 message +=
 "\n\n💳 Payment Status: Pending ⏳" +
 "\nOwner will confirm payment after order.";
+
+   alert("Order save karne ja raha hai"); 
 // Save Order to Firebase
 saveOrder({
     customerName: customerName,
