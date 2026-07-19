@@ -648,16 +648,12 @@ message += "\n\n💳 Payment Status: I have already paid ✅";
 // ===============================
 // UPI PAYMENT
 // ===============================
-
 function payNow(){
 
     if(Object.keys(cart).length === 0){
         alert("Please add items first.");
         return;
     }
-
-    document.getElementById("paymentPopup").style.display="flex";
-
 
     let upiLink =
     "upi://pay?pa=q051599316@ybl" +
@@ -666,9 +662,18 @@ function payNow(){
     "&cu=INR";
 
 
+    // QR show
+    document.getElementById("paymentPopup").style.display="flex";
+
     document.getElementById("paymentQR").src =
     "https://api.qrserver.com/v1/create-qr-code/?size=250x250&data="
     + encodeURIComponent(upiLink);
+
+
+    // Pay via Link open
+    setTimeout(function(){
+        window.location.href = upiLink;
+    },1000);
 
 }
 
