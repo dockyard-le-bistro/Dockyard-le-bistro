@@ -1,9 +1,6 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAuaFGwNjJtV0mcXZ7Tw734R0Q4HzChs1k",
   authDomain: "dockyard-le-bistro.firebaseapp.com",
@@ -16,10 +13,14 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
-
 const db = getDatabase(app);
 
-window.saveOrder = function(orderData) {
-    push(ref(db, "orders"), orderData);
-}
+// Save Order Function
+window.saveOrder = async function(orderData) {
+  try {
+    await push(ref(db, "orders"), orderData);
+    console.log("Order Saved Successfully");
+  } catch (error) {
+    console.error("Firebase Error:", error);
+  }
+};
