@@ -24,3 +24,4 @@ window.saveOrder = async function(orderData) {
     console.error("Firebase Error:", error);
   }
 };
+console.log("Firebase Loaded");
