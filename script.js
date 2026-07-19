@@ -903,7 +903,7 @@ function openUPI(){
 
     let link = 
     "upi://pay?pa=" + upiID +
-    "&pn=" + encodeURIComponent(name) +
+    "&pn=" + encodeURIComponent("Sandeep Singh") +
     "&am=" + finalTotal.toFixed(2) +
     "&cu=INR";
 
