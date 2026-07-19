@@ -4662,33 +4662,18 @@ ADD
         id="customerAddress"
         placeholder="Delivery Address"></textarea>
 
-    <button class="pay-btn" onclick="payNow()">
-        💳 PAY NOW
-    </button>
+    
 
     <button class="whatsapp-btn" onclick="sendWhatsApp()">
         🟢 ORDER ON WHATSAPP
     </button>
 
-    <div id="paymentPopup" class="payment-popup" style="display:none;">
-
-    <div class="payment-box">
-
-        <h2>💳 Scan & Pay</h2>
-
-        <img id="paymentQR" alt="Payment QR">
-
-        <p>Scan this QR using any UPI App</p>
+    
 
         <button class="whatsapp-btn" onclick="sendWhatsApp()">
 🟢 ORDER ON WHATSAPP
 </button>
-<button class="pay-link-btn" onclick="openUPIApp()">
-💳 PAY VIA UPI
-</button>
-<button class="paid-btn" onclick="paymentDone()">
-✅ PAYMENT DONE
-</button>
+
         <button onclick="closePayment()">Close</button>
 
     </div>
