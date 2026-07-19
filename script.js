@@ -627,7 +627,18 @@ let message =
     "\nFinal Total : ₹" + finalTotal;
 
 message += "\n\n💳 Payment Status: I have already paid ✅";
-
+// Save Order to Firebase
+saveOrder({
+    customerName: customerName,
+    customerPhone: customerPhone,
+    customerAddress: customerAddress,
+    items: Object.values(cart),
+    subtotal: subtotal,
+    discount: discount,
+    total: finalTotal,
+    paymentStatus: "Paid",
+    orderTime: new Date().toISOString()
+});
     window.open(
 
         "https://wa.me/" +
