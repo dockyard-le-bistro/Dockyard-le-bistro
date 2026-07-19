@@ -1845,3 +1845,51 @@ height:30px;
     cursor:pointer;
 
 }
+/* FINAL CATEGORY DESIGN */
+
+.category-card{
+    height:170px !important;
+    border-radius:25px !important;
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    align-items:center !important;
+    font-size:22px !important;
+}
+
+
+/* ICON SIZE */
+
+.category-card img{
+    width:100px !important;
+    height:100px !important;
+    object-fit:contain;
+    margin-bottom:10px;
+}
+
+
+/* DIFFERENT COLORS */
+
+.category-card:nth-child(1){
+    background:linear-gradient(135deg,#ff512f,#dd2476) !important;
+}
+
+.category-card:nth-child(2){
+    background:linear-gradient(135deg,#11998e,#38ef7d) !important;
+}
+
+.category-card:nth-child(3){
+    background:linear-gradient(135deg,#f7971e,#ffd200) !important;
+}
+
+.category-card:nth-child(4){
+    background:linear-gradient(135deg,#654ea3,#eaafc8) !important;
+}
+
+.category-card:nth-child(5){
+    background:linear-gradient(135deg,#ff416c,#ff4b2b) !important;
+}
+
+.category-card:nth-child(6){
+    background:linear-gradient(135deg,#00c6ff,#0072ff) !important;
+}
