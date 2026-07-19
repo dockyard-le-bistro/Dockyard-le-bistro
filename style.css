@@ -2005,3 +2005,26 @@ font-size:22px !important;
 .category-card:first-letter{
 font-size:70px !important;
 }
+.crispy{
+    background:linear-gradient(135deg,#ff512f,#f09819) !important;
+}
+
+.tikka{
+    background:linear-gradient(135deg,#8e2de2,#4a00e0) !important;
+}
+
+.chinese{
+    background:linear-gradient(135deg,#11998e,#38ef7d) !important;
+}
+
+.main{
+    background:linear-gradient(135deg,#ee0979,#ff6a00) !important;
+}
+
+.meal{
+    background:linear-gradient(135deg,#2193b0,#6dd5ed) !important;
+}
+
+.street{
+    background:linear-gradient(135deg,#834d9b,#d04ed6) !important;
+}
