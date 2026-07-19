@@ -1743,11 +1743,10 @@ height:30px;
 .kulcha{
     background:linear-gradient(135deg,#ff512f,#dd2476);
 }
-
-.prantha{
-    background:linear-gradient(135deg,#f7971e,#ffd200);
-    color:#222;
+.parantha{
+    background:linear-gradient(135deg,#f7971e,#ffd200) !important;
 }
+
 
 .fries{
     background:linear-gradient(135deg,#8360c3,#2ebf91);
