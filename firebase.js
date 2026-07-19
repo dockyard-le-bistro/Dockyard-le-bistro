@@ -19,7 +19,18 @@ const db = getDatabase(app);
 window.saveOrder = async function(orderData) {
   try {
     await push(ref(db, "orders"), orderData);
+koi
+    
     console.log("Order Saved Successfully");
+    window.saveOrder = async function(orderData) {
+  try {
+    await push(ref(db, "orders"), orderData);
+    console.log("Order Saved Successfully");
+    alert("Firebase me save ho gaya");
+  } catch (error) {
+    console.error("Firebase Error:", error);
+  }
+};
   } catch (error) {
     console.error("Firebase Error:", error);
   }
