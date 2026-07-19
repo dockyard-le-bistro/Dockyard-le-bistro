@@ -655,10 +655,14 @@ function payNow(){
         return;
     }
 
+
+    let amount = finalTotal.toFixed(2);
+
+
     let upiLink =
-    "upi://pay?pa=q051599316@ybl" +
+    "upi://pay?pa=" + UPI_ID +
     "&pn=Sandeep%20Singh" +
-    "&am=" + finalTotal.toFixed(2) +
+    "&am=" + amount +
     "&cu=INR";
 
 
@@ -670,13 +674,10 @@ function payNow(){
     + encodeURIComponent(upiLink);
 
 
-    // Pay via Link open
-    setTimeout(function(){
-        window.location.href = upiLink;
-    },1000);
+    // Open UPI app
+    window.location.href = upiLink;
 
 }
-
 
 // ===============================
 // GO TO CART
