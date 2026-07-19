@@ -222,7 +222,25 @@ appId: "1:991617661975:web:9d69822a65b19fe31a3052"
 
 const app = initializeApp(firebaseConfig);
 
+const messaging = getMessaging(app);
+async function enableNotifications(){
 
+const permission = await Notification.requestPermission();
+
+if(permission === "granted"){
+
+const token = await getToken(messaging,{
+vapidKey:"BF5PqMtgYa5QN9oiPSv-4EjF5XT3u3LLPJBKokh6ibOQ4dU5EViJ8vjKbCFGKE8-dPzwwiy5TlAYclLacOCo27Y
+"
+});
+
+console.log("Owner Notification Token:", token);
+
+}
+
+}
+
+enableNotifications();
 const db = getDatabase(app);
 
 
