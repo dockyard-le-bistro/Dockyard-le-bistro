@@ -941,3 +941,27 @@ function openUPIApp(){
     window.location.href = upiLink;
 
 }
+function paymentDone(){
+
+    if(Object.keys(cart).length === 0){
+        alert("Cart is Empty");
+        return;
+    }
+
+    let message = "✅ PAYMENT RECEIVED\n\n";
+    message += "🍕 Dockyard Le Bistro\n\n";
+
+    message += "Order Details:\n";
+
+    for(let item in cart){
+        message += `${item} x ${cart[item].qty} = ₹${cart[item].qty * cart[item].price}\n`;
+    }
+
+    message += `\n💰 Total: ₹${finalTotal}`;
+    message += "\n\n💳 Payment Status: PAID";
+
+    let url = "https://wa.me/917626845853?text=" + encodeURIComponent(message);
+
+    window.open(url,"_blank");
+
+}
