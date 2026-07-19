@@ -1,6 +1,11 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
-
+import {
+getMessaging,
+getToken,
+onMessage
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js";
 const firebaseConfig = {
   apiKey: "AIzaSyAuaFGwNjJtV0mcXZ7Tw734R0Q4HzChs1k",
   authDomain: "dockyard-le-bistro.firebaseapp.com",
