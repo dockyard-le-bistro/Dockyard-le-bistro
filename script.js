@@ -870,3 +870,18 @@ function searchFood() {
     });
 
 }
+function startUPIPayment(){
+
+    let upiID = "q051599316@ybl;
+    let receiverName = "Sandeep Singh";
+
+    let upiURL = 
+    "upi://pay?pa=" + upiID +
+    "&pn=" + receiverName +
+    "&am=" + finalTotal +
+    "&cu=INR";
+
+    window.location.href = upiURL;
+
+}
+
