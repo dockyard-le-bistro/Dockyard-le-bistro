@@ -1893,3 +1893,19 @@ height:30px;
 .category-card:nth-child(6){
     background:linear-gradient(135deg,#00c6ff,#0072ff) !important;
 }
+/* CATEGORY EMOJI SIZE */
+
+.category-card{
+    font-size:22px !important;
+}
+
+
+.category-card{
+    line-height:1.2;
+}
+
+
+/* emoji ko bada karne ke liye */
+.category-card::first-letter{
+    font-size:70px;
+}
