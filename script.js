@@ -891,13 +891,22 @@ function startUPIPayment(){
 }
 function openUPI(){
 
-    let upiID = "q051599316@ybl"; 
+    if(Object.keys(cart).length === 0){
+        alert("Please add items first.");
+        return;
+    }
+
+
+    let upiID = UPI_ID;
     let name = "Sandeep Singh";
 
-    let link = "upi://pay?pa=" + upiID +
-               "&pn=" + name +
-               "&am=" + finalTotal +
-               "&cu=INR";
+
+    let link = 
+    "upi://pay?pa=" + upiID +
+    "&pn=" + encodeURIComponent(name) +
+    "&am=" + finalTotal.toFixed(2) +
+    "&cu=INR";
+
 
     window.location.href = link;
 
