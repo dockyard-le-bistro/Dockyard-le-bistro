@@ -1998,3 +1998,10 @@ background:linear-gradient(135deg,#fc4a1a,#f7b733) !important;
 .street{
 background:linear-gradient(135deg,#667eea,#764ba2) !important;
 }
+.category-card{
+font-size:22px !important;
+}
+
+.category-card:first-letter{
+font-size:70px !important;
+}
