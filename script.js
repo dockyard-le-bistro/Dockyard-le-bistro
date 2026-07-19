@@ -649,19 +649,21 @@ let message =
 // UPI PAYMENT
 // ===============================
 
-function payNow() {
+function payNow(){
 
-    if (Object.keys(cart).length === 0) {
+    if(Object.keys(cart).length === 0){
         alert("Please add items first.");
         return;
     }
 
-    let amount = Number(finalTotal).toFixed(2);
+    document.getElementById("paymentPopup").style.display = "flex";
 
-    const upiLink =
-        `upi://pay?pa=Q051599316@ybl&pn=PhonePeMerchant&mc=0000&mode=02&purpose=00&am=${amount}&cu=INR`;
+}
 
-    window.location.href = upiLink;
+function closePayment(){
+
+    document.getElementById("paymentPopup").style.display = "none";
+
 }
 
 
