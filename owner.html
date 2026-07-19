@@ -1,1 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
 
+<title>Dockyard Le Bistro - Owner Orders</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#fff8e1;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#d32f2f;
+}
+
+.order-card{
+
+    background:white;
+    padding:15px;
+    margin:15px 0;
+    border-radius:12px;
+    box-shadow:0 3px 10px #ccc;
+
+}
+
+button{
+
+    padding:8px 12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin:5px;
+
+}
+
+.paid{
+    background:green;
+    color:white;
+}
+
+.delete{
+    background:red;
+    color:white;
+}
+
+.call{
+    background:#2196f3;
+    color:white;
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1>🍽️ Dockyard Le Bistro Orders</h1>
+
+
+<div id="orders">
+Loading Orders...
+</div>
+
+
+
+<script type="module">
+
+
+import { initializeApp } 
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+
+import { 
+getDatabase,
+ref,
+onValue,
+update,
+remove
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+
+
+const firebaseConfig = {
+
+apiKey: "AIzaSyAuaFGwNjJtV0mcXZ7Tw734R0Q4HzChs1k",
+
+authDomain: "dockyard-le-bistro.firebaseapp.com",
+
+databaseURL: "https://dockyard-le-bistro-default-rtdb.asia-southeast1.firebasedatabase.app",
+
+projectId: "dockyard-le-bistro",
+
+storageBucket: "dockyard-le-bistro.firebasestorage.app",
+
+messagingSenderId: "991617661975",
+
+appId: "1:991617661975:web:9d69822a65b19fe31a3052"
+
+};
+
+
+
+const app = initializeApp(firebaseConfig);
+
+const db = getDatabase(app);
+
+
+
+const ordersDiv = document.getElementById("orders");
+
+
+
+onValue(ref(db,"orders"),(snapshot)=>{
+
+
+ordersDiv.innerHTML="";
+
+
+let data = snapshot.val();
+
+
+if(!data){
+
+ordersDiv.innerHTML="No Orders";
+
+return;
+
+}
+
+
+
+Object.keys(data).reverse().forEach(id=>{
+
+
+let order=data[id];
+
+
+let items="";
+
+
+order.items.forEach(item=>{
+
+items += item.name+" x "+item.qty+"<br>";
+
+});
+
+
+
+ordersDiv.innerHTML += `
+
+
+<div class="order-card">
+
+
+<h3>🍽️ New Order</h3>
+
+
+<b>Name:</b> ${order.customerName}<br>
+
+<b>Phone:</b> ${order.customerPhone}
+
+<br>
+
+<b>Address:</b> ${order.customerAddress}
+
+<br><br>
+
+
+<b>Items:</b><br>
+
+${items}
+
+
+<br>
+
+<b>Total:</b> ₹${order.total}
+
+
+<br>
+
+<b>Status:</b> ${order.paymentStatus}
+
+
+<br>
+
+<b>Time:</b> ${order.orderTime}
+
+
+
+<br><br>
+
+
+<a href="tel:${order.customerPhone}">
+
+<button class="call">
+📞 Call Customer
+</button>
+
+</a>
+
+
+
+<button class="paid" onclick="markPaid('${id}')">
+
+✅ Mark Paid
+
+</button>
+
+
+
+<button class="delete" onclick="deleteOrder('${id}')">
+
+🗑 Delete
+
+</button>
+
+
+
+</div>
+
+
+`;
+
+
+
+});
+
+
+});
+
+
+
+
+
+window.markPaid=function(id){
+
+
+update(ref(db,"orders/"+id),{
+
+paymentStatus:"Paid"
+
+});
+
+
+}
+
+
+
+
+window.deleteOrder=function(id){
+
+
+if(confirm("Delete this order?")){
+
+remove(ref(db,"orders/"+id));
+
+}
+
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
