@@ -635,7 +635,7 @@ message +=
 "\n\n💳 Payment Status: Pending ⏳" +
 "\nOwner will confirm payment after order.";
 
-   alert("Order save karne ja raha hai"); 
+   
     alert(typeof window.saveOrder);
 saveOrder({
     customerName: customerName,
