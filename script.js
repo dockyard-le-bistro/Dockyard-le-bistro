@@ -894,22 +894,20 @@ function startUPIPayment(){
     window.location.href = upiURL;
 
 }
-function openUPI(){
+function payUPI(){
 
-    if(Object.keys(cart).length === 0){
-        alert("Please add items first.");
+    if(finalTotal <= 0){
+        alert("Cart is empty");
         return;
     }
 
-    let upiID = "q051599316@ybl";
-    let name = "Sandeep Singh";
+    let amount = finalTotal.toFixed(2);
 
-    let link =
-    "upi://pay?pa=" + upiID +
-    "&pn=" + encodeURIComponent(name) +
-    "&am=" + finalTotal.toFixed(2) +
+    let upiLink =
+    "upi://pay?pa=q051599316@ybl&pn=Sandeep%20Singh&am="
+    + amount +
     "&cu=INR";
 
-    window.location.href = link;
+    window.location.href = upiLink;
 
 }
